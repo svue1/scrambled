@@ -1,0 +1,106 @@
+/*Universal CSS*/
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Universal CSS End*/
+
+/*Footer CSS*/
+footer {
+    background-color: #F15A29;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.column1 { /*Left Side*/
+    margin-left: 2%;
+    float: left;
+    width: 73%;
+    padding: 10px;
+}
+.column2 { /*Right Side*/
+    float: left;
+    width: 25%;
+    padding: 10px;
+    line-height: 2;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column2 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.column2 a:hover {
+    color: #FFCC46;
+}
+/*Footer CSS End*/
+
+/*Nav Bar CSS*/
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFCC46;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar li {
+    float: left;
+    padding: 14px 16px;
+}
+.nav-bar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav-bar li div {
+    padding: 14px 16px;
+}
+.nav-bar li div input {
+    border-radius: 5px;
+}
+/*Nav Bar CSS End*/
+
+/*Body CSS*/
+img {
+    width: 100%;
+    max-height: 800px;
+}
+.feature {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.recipe-of-the-day {
+    position: absolute;
+    top: 100px;
+    background-color: #F15A29;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.info-box {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    background-color: white;
+    padding: 3%;
+    color: black;
+    max-width: 500px;
+    border-radius: 15px;
+    text-align: left;
+}
