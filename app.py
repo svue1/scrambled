@@ -1,3 +1,9 @@
+# @author: Aberdeen Morrow
+# Last Modified: 12-02-21
+# Macalester College
+# COMP 446 Internet Computing
+# with Joslenne Pena
+
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user

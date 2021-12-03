@@ -113,6 +113,7 @@ footer {
 }
 .nav-bar .nav-logo img {
     height: 2em !important;  
+    width: 2.25em;
 }
 .search-container input {
     height: 2.5em;

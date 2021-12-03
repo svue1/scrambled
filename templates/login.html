@@ -1,18 +1,26 @@
+<!--
+@uthor: Shouayee Vue
+Last Modified: 11-29-21
+Macalester College
+COMP 446 Internet Computing
+with Joslenne Pena
+-->
 {% extends 'base.html' %}
 
-{% block content %}
-<div class="container">
-    <h1> Sign In</h1>
-    <label for="username"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="username" required>
-
-    <label for="password"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="password" required>
-
-    <button type="submit">Login</button>
-    <!-- <label>
-    <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label> -->
-</div>
-
+{% block header %}
+<link rel="stylesheet" href="login.css">
 {% endblock %}
+
+{% block content %}
+    <form class="login-form" action="{{ url_for('login') }}" method="post">
+        <label for="username"><b>Username</b></label>
+        <input class="login-form-field" type="text" placeholder="Enter Username" name="username" required>
+
+        <label for="password"><b>Password</b></label>
+        <input class="login-form-field" type="password" placeholder="Enter Password" name="password" required>
+
+        <input id="login-form-submit" class="signup" name="action" type="submit" value="Sign Up"></input>
+        <input class="login" name="action" type="submit" value="Log In"></input>
+    </form>
+{% endblock %}
+
