@@ -1,0 +1,239 @@
+/*Universal CSS*/
+:root {
+    --yellow: #FFCC46;
+    --orange: #F15A29;
+  }
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin: 0;
+}
+p {
+    font-family: Georgia, serif;
+    margin: 0;
+    font-size: 16px;
+    /* , 'Times New Roman', Times, serif; */
+}
+body {
+    background: #EEEEEE;
+}
+h1 {
+    font-family: "Lora", serif;
+    font-size: 32px;
+    font-weight: 700;
+    /* , 'Times New Roman', Times, serif; */
+}
+h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+h3 {
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+a {
+    font-family: "Work Sans", sans-serif;
+    /* letter-spacing: 0.05em; */
+    font-weight: 500;
+    font-size: 16px
+}
+.page-title {
+    margin: 2% 2% 0 2% !important;
+}
+/*Universal CSS End*/
+
+/*Footer CSS*/
+footer {
+    background-color: var(--orange);
+    color: white;
+    font-family: Rubik, Helvetica, sans-serif;
+}
+.column1 { /*Left Side*/
+    margin-left: 2%;
+    float: left;
+    width: 73%;
+    padding: 10px;
+}
+.column2 { /*Right Side*/
+    float: left;
+    width: 25%;
+    padding: 10px;
+    line-height: 2;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column2 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.column2 a:hover {
+    color: var(--yellow);
+}
+/*Footer CSS End*/
+
+/*Nav Bar CSS*/
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--yellow);
+    width: 100%;
+    height: 4em;
+}
+.nav-bar li {
+    float: left;
+    padding: 8px 10px;
+}
+.nav-bar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+.nav-bar li a:hover {
+    color: var(--orange);
+}
+.nav-bar li div {
+    padding: 8px 10px;
+}
+.nav-bar li div input {
+    border-radius: 5px;
+}
+.nav-bar .nav-bar--right {
+    float: right;
+}
+.nav-bar .nav-logo img {
+    height: 2em !important;  
+}
+.search-container input {
+    height: 2.5em;
+    width: 35em;
+    border-radius: 10px 0 0 10px !important;
+    font-family: "Work Sans", sans-serif;
+    padding: 10px 15px;
+    /* margin-top: 8px; */
+    font-size: 14px;
+    border: none;
+}
+.search-container button {
+    height: 2.5em;
+    border-radius: 0 10px 10px 0;
+    float: right;
+    padding: 0 15px;
+    margin-right: 16px;
+    background: var(--orange);
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+.search-container button:hover {
+    background: black;
+}
+/*Nav Bar CSS End*/
+
+/*Body CSS*/
+img {
+    width: 100%;
+    max-height: 800px;
+}
+.feature {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.recipe-of-the-day {
+    position: absolute;
+    top: 120px;
+    background-color: var(--orange);
+    padding: 1% 5% 1% 5%;
+}
+.info-box {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    background-color: white;
+    padding: 4% 3% 3% 3%;
+    color: black;
+    max-width: 500px;
+    border-radius: 15px;
+    text-align: left;
+}
+hr {
+    height:0.3em;
+    width: 66%;
+    float: left;
+    border-width:0;
+    border-radius: 0 5px 5px 0;
+    color: var(--yellow);
+    background-color: var(--yellow)
+}
+.container {
+    max-width: 800px;
+    min-height: 500px;
+    width: 100%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+/* Recipe Page CSS */
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DDDDDD;
+    margin: 1%;
+    /* width: 18rem; */
+    width: 250px;
+    background-color: white;
+}
+.card-body {
+    padding: 3%;
+}
+.recipes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 2%;
+    flex-wrap: wrap;
+}
+/* Recipe Card CSS end */
+
+/* Log In CSS */
+.login_form {
+    font-family: "Work Sans", sans-serif;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+.login_form input {
+    height: 3em;
+    width: 35em;
+    /* border-radius: 10px 0 0 10px !important; */
+    font-family: "Work Sans", sans-serif;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+}
+.login_form .login,
+.login_form .signup {
+    height: 3em;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-right: 16px;
+    background: var(--orange);
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+/* Log In CSS end */

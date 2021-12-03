@@ -1,67 +1,50 @@
-<!DOCTYPE html>
-<!--
-@uthor: Shouayee Vue
-Last Modified: 11-21-21
-Macalester College
-COMP 446 Internet Computing
-with Joslenne Pena
--->
-<html>
-    <head>
-        <title>Scrambled</title>
-        <link rel="stylesheet" href="home.css">
-        <script src="https://kit.fontawesome.com/54e37e037b.js" crossorigin="anonymous"></script>
-    </head>
-    
-    <body>
-        <!--Navigation Bar-->
-        <ul class="nav-bar">
-            <li>
-                <div class="nav-logo"> 
-                    Scrambled Logo <!--Add Logo IMG Here-->
-                </div>
-            </li>
-            <li>
-                <div class="search-container">
-                    <form action="">
-                        <input type="text" placeholder="Search recipes by ingredient..." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-              </div>
-            </li>
-            <li><a href="">HOME</a></li>
-            <li><a href="">RECIPES</a></li>
-            <li><a href=""><i class='fas fa-user-alt'></i></a></li> 
-        </ul>
+{% extends 'base.html' %}
 
-        <!--Feature Section-->
-        <div class="feature">
-            <img src="stock.jpg" alt="stock image"> <!--Change Image According To Featured Dish-->
-            <div class="info-box"> <!--Info box must go before Recipe of the Day for overlapping purposes-->
-                <h1>Name of Recipe</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="recipe-of-the-day"><h2>RECIPE OF THE DAY</h2></div>
-        </div> 
+{% block content %}
 
-        <!--Results Section-->
-        <h1>My First Heading</h1>
-        <p>My first paragraph.</p>
+<!--Feature Section-->
+<div class="feature">
+    <img src="static/stock.jpg" alt="stock image"> <!--Change Image According To Featured Dish-->
+    <div class="info-box"> <!--Info box must go before Recipe of the Day for overlapping purposes-->
+        <h1>Name of Recipe</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="recipe-of-the-day"><h3>RECIPE OF THE DAY</h3></div>
+</div> 
 
-    </body>
-    
-    <footer>
-        <div class="row">
-            <div class="column1">
-                <h2>About Us</h2>
-                <p>Based in Saint Paul, MN, we developed Scrambled for an Internet Computing class taught by Joslenne Pena at Macalester College.</p>
-            </div>
-            <div class="column2">
-                <a href="">RECIPES</a><br>
-                <a href="">SEACH BY INGREDIENT</a><br>
-                <a href="">SAVED RECIPES</a><br>
-                <a href="">LOGIN</a><br>
-            </div>
+<!--Results Section-->
+<h1 class="page-title">Browse Recipes</h1>
+
+<hr></br>
+<div class="recipes">
+    <div class="card">
+      <img src="static/stock.jpg" alt="stock image" class="card-image-top">
+        <div class="card-body">
+          <h3 class="card-title"><a href="{{url_for('recipe')}}">Recipe title</a></h3>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card">
+      <img src="static/stock.jpg" alt="stock image" class="card-image-top">
+        <div class="card-body">
+          <h3 class="card-title"><a href="">Recipe title</a></h3>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card">
+      <img src="static/stock.jpg" alt="stock image" class="card-image-top">
+        <div class="card-body">
+          <h3 class="card-title"><a href="">Recipe title</a></h3>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="static/stock.jpg" alt="stock image" class="card-image-top">
+          <div class="card-body">
+            <h3 class="card-title"><a href="">Recipe title</a></h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
-    </footer>
-</html> 
+        </div>
+  </div>
+
+{% endblock %}
