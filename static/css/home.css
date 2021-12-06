@@ -29,7 +29,7 @@ h2 {
     font-weight: 700;
     margin: 0;
 }
-h3 {
+h3, .profile-accordion {
     font-family: "Rubik", sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -117,7 +117,8 @@ footer {
 }
 .search-container input {
     height: 2.5em;
-    width: 35em;
+    min-width: 20em;
+    max-width: 50em;
     border-radius: 10px 0 0 10px !important;
     font-family: "Work Sans", sans-serif;
     padding: 10px 15px;
@@ -145,6 +146,9 @@ footer {
 /*Body CSS*/
 img {
     width: 100%;
+}
+.recipe-of-the-day--image {
+    width: 100%;
     max-height: 800px;
 }
 .feature {
@@ -152,11 +156,23 @@ img {
     text-align: center;
     color: white;
 }
+.recipe-of-the-day--title {
+    font-family: "Lora", serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+.recipe-of-the-day--title:hover {
+    color: var(--orange);
+}
 .recipe-of-the-day {
     position: absolute;
     top: 120px;
     background-color: var(--orange);
     padding: 1% 5% 1% 5%;
+    color: white;
+}
+.recipe-of-the-day:hover {
+    color: var(--yellow);
 }
 .info-box {
     position: absolute;
@@ -179,14 +195,14 @@ hr {
     background-color: var(--yellow)
 }
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     min-height: 500px;
     width: 100%;
     margin: auto;
     padding: 50px 0;
 }
 
-/* Recipe Page CSS */
+/* Recipe Card CSS */
 .card {
     border-style: solid;
     border-width: 1px;
@@ -197,7 +213,10 @@ hr {
     background-color: white;
 }
 .card-body {
-    padding: 3%;
+    padding: 5%;
+}
+.recipe {
+    margin: 1%;
 }
 .recipes {
     width: 100%;
@@ -207,7 +226,52 @@ hr {
     margin: 2%;
     flex-wrap: wrap;
 }
+.recipe-details {
+    margin: 1%;
+    width: 435%;
+    padding: 5%;
+    background-color: white;
+}
 /* Recipe Card CSS end */
+
+/* Recipe Page CSS */
+.recipe-container {
+    background: white;
+}
+.recipe-container-details {
+    padding: 48px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.recipe-container h1 {
+    background: white;
+    padding: 0 0 0 48px;
+}
+.recipe-container h1, 
+.recipe-container hr, 
+.recipe-container br,
+.recipe-container .full-width {
+    width: 100%;
+}
+#recipe-img {
+    max-width: 500px;
+    border-style: solid;
+    border-width: 1px;
+    flex: 1; 
+}
+#ingredients {
+    flex: 1; 
+    min-width: 250px;
+    overflow: wrap;
+}
+#ingredients p,
+#instructions p {
+    padding: 5px 20px;
+}
+/* End Recipe Page */
 
 /* Log In CSS */
 .login_form {
@@ -238,3 +302,48 @@ hr {
     cursor: pointer;
 }
 /* Log In CSS end */
+
+/* Accordion CSS */
+.accordion {
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+  
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+    display: none;
+}
+  /* End Accordion CSS */
+
+/* Profile CSS */
+.profile-accordion {
+    background: white;
+    color: var(--orange);
+    padding: 1% 1% 1% 2%;
+    margin: 1% 0 0 0;
+    width: 100%;
+}
+
+/* End Profile CSS */
+
+/* Error CSS */
+.error-message {
+    padding: 10px 15px ;
+    background: var(--yellow);
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.error-message-text {
+    font-family: "Rubik", sans-serif !important;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+/* End Error CSS */

@@ -23,8 +23,9 @@ with Joslenne Pena
                 <a href="{{ url_for('home') }}">
                 <img src="static/logo.png" alt="Scrambled logo">
                 <!-- <h1>Scrambled</h1> -->
-                </a> 
+                </a>  
             </li>
+            <li><a href="{{ url_for('home') }}"><h1>Scrambled</h1></a></li>
             <li>
                 <div class="search-container">
                     <form action="{{ url_for('search') }}" method="post">
@@ -40,15 +41,15 @@ with Joslenne Pena
                     {% if logged_in %}
                     <a href="{{ url_for('profile') }}"><i class='fas fa-user-alt'></i></a>
                     {% else %}
-                    <a href="{{ url_for('login') }}">LOG IN</i></a>
+                    <a href="{{ url_for('login') }}">LOG IN</a>
                     {% endif %}
                 </li>
             </div>
         </ul>
-
         {% block content %}
         {% endblock %}
-
+    
+        <script src="{{url_for('static', filename='app.js')}}"></script>
     </body>
     
     <footer>
@@ -60,8 +61,12 @@ with Joslenne Pena
             <div class="column2">
                 <a href="{{ url_for('recipes') }}">RECIPES</a><br>
                 <a href="">SEARCH BY INGREDIENT</a><br>
-                <a href="{{ url_for('profile') }}">SAVED RECIPES</a><br>
-                <a href="{{ url_for('login') }}">LOG IN</a><br>
+                {% if logged_in %}
+                    <a href="{{ url_for('profile') }}">SAVED RECIPES</a><br>
+                    <a href="{{ url_for('logout') }}">LOG OUT</a>
+                    {% else %}
+                    <a href="{{ url_for('login') }}">LOG IN</a>
+                    {% endif %}
             </div>
           </div>
     </footer>

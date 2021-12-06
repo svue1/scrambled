@@ -8,6 +8,15 @@ with Joslenne Pena -->
 {% block content %}
 <div class="container">
     <h1>Log In</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <div class="error-message">
+                <p class="error-message-text">{{ message }}<p>
+            </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
     <form class="login_form" action="{{ url_for('login') }}" method="post">
         <label for="username"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="username" required>

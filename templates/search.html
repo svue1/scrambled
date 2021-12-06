@@ -10,7 +10,7 @@
         <div class="card">
             <img src="static/stock.jpg" alt="stock image" class="card-image-top">
             <div class="card-body">
-            <h3 class="card-title"><a href="">{{recipe['name']}}</a></h3>
+            <h3 class="card-title"><a href="{{ url_for('recipe') }}">{{recipe['name']}}</a></h3>
             <p class="card-text">
                 <p>
                     {% for ingredient in recipe['ingredients'] %}

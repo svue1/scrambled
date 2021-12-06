@@ -48,18 +48,24 @@ def load_user(user_id):
 
 @app.route("/")
 def home():
-    # user = User.query.filter_by(username='joss').first()
-    # login_user(user)
     title = "Scrambled"
     return render_template("home.html", title=title, logged_in=current_user.is_authenticated) # can set any different variables
 
 @app.route("/recipes")
 def recipes():
-    return render_template("recipes.html", title="Recipes")
+    return render_template("recipes.html", 
+                            title="Recipes",
+                            logged_in=current_user.is_authenticated)
 
-@app.route("/recipe")
+@app.route('/recipe')
 def recipe():
-    return render_template("recipe.html", title="Recipe")
+    return render_template("recipe.html", 
+                            title="Recipe",
+                            logged_in=current_user.is_authenticated)
+# @app.route("/recipe/<id>")
+# def recipe(id):
+#     return render_template("recipe.html", title=recipe['name'], recipe=recipe)
+    # return render_template("recipe.html", title=db.query.get(id).title, recipe=db.query.get(id))
 
 @app.route('/login', methods=['GET','POST'])
 def login():
@@ -68,12 +74,18 @@ def login():
     elif request.method == 'POST':
         if request.form.get('action') == 'Sign Up':
             username = request.form['username']
+            # Ensures username is unique
+            if User.query.filter_by(username=username).count() > 0:
+                alert = 'Username \'' + username + '\' is already in use. Please choose a different username.'
+                flash(alert)
+                return render_template('register.html', alert=alert)
             password = request.form['password']
             hashed_password = generate_password_hash(password)
             new_user = User(username=username, password=hashed_password)
             # try:
             db.session.add(new_user)
             db.session.commit()
+            login_user(new_user)
             return redirect('/')
         elif request.form.get('action') == 'Log In':
             username = request.form['username']
@@ -81,20 +93,19 @@ def login():
             user = User.query.filter_by(username=username).first()
             if check_password_hash(user.password, password):
                 login_user(user)
-                flash('Welcome back {0}'.format(username))
                 try:
                     next = request.form['next']
                     return redirect(next)
                 except:
                     return redirect('/')
             else:
-                flash('Invalid login')
-                return redirect(url_for('register'))
+                flash('Username and password do not match. Please try again.')
+                return redirect('/login')
 
 @app.route('/logout')
 def logout():
     logout_user()
-    return redirect("home.html")
+    return redirect('/')
 
 @app.route('/search', methods=['GET', 'POST'])
 def search():
@@ -104,12 +115,15 @@ def search():
     #     for recipe['ingredients'] in recipe:
     #         if search_term == recipe['ingredients']['name']:
     #             search_results.append(recipe)
-    return render_template("search.html", search_term=search_term, search_results=recipe_data) #, title=""+search_term+"", search_term=search_term)
+    return render_template("search.html", 
+                            search_term=search_term, 
+                            search_results=recipe_data,
+                            logged_in=current_user.is_authenticated) #, title=""+search_term+"", search_term=search_term)
 
 @app.route("/user")
 @login_required
 def profile():
-    return render_template("profile.html", title="Your Recipes")
+    return render_template("profile.html", title="Your Recipes", logged_in=current_user.is_authenticated)
 
 # @app.route("/logout")
 # @login_required
