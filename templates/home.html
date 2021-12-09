@@ -2,68 +2,98 @@
 
 {% block content %}
 
-<!--Feature Section-->
-<div class="feature"><a href="{{ url_for('recipe') }}">
-    <img src="static/stock.jpg" alt="stock image" class="recipe-of-the-day--image"> <!--Change Image According To Featured Dish-->
-    <div class="info-box"> <!--Info box must go before Recipe of the Day for overlapping purposes-->
-        <h1 class="recipe-of-the-day--title">Name of Recipe</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div class="recipe-of-the-day"><h3>RECIPE OF THE DAY</h3></div>
-  </a>
+<!--Recipe of the Day Section-->
+<div class="feature">
+  <img src="static/recipe_of_the_day.jpg" alt="Image of the Best Scrambled Eggs" class="recipe-of-the-day--image">
+  <div class="info-box">
+    <a href="{{ url_for('recipe') }}">
+      <h1 class="recipe-of-the-day--title">The Best Scrambled Eggs</h1>
+    </a>
+    <p>We’ve been eating scrambled eggs for days now. Why? Well, they’re delicious. Obviously. But also EASY. You probably don’t think you need a recipe for them, but maybe you do! And it sure helps to know how to make them the right way. Trust me. Stop making dry, crumbly, flavorless eggs! Follow these simple steps and recipe on how to make the absolute best scrambled eggs, which result in pillow-y, fluffy, creamy, flavorful eggs every time!</p>
+  </div>
+  <div class="recipe-of-the-day"><h3>RECIPE OF THE DAY</h3></div>
 </div> 
 
-<!--Results Section-->
-<h1 class="page-title">Browse Recipes</h1>
-
+<!--Feature Section-->
+<h1 class="page-title">Featured Recipes</h1>
 <hr></br>
 <div class="recipes">
   <div class="recipe">
     <div class="card accordion">
-      <img src="static/stock.jpg" alt="stock image" class="card-image-top">
+      <img src="static/Muffins.jpg" alt="Image of Egg Muffins" class="card-image-top">
         <div class="card-body">
-          <h3 class="card-title"><a href="{{ url_for('recipe') }}">Recipe title</a></h3>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h3 class="card-title"><a href="{{ url_for('recipe') }}">Healthy Breakfast Egg Muffins</a></h3>
+          <p class="card-text">Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!</p>
         </div>
     </div>
-    <div class="recipe-details panel">
-      Recipe details here
+    <div class="recipe-details panel">Ingredients
+      <ul>
+        <li>Egg</li>
+        <li>Spinach</li>
+        <li>Broccoli</li><br><br>
+        <li>Kale</li>
+        <li>Tomato</li>
+        <li>Sausage</li><br><br>
+        <li>Bacon</li>
+        <li>Cherry Tomato</li>
+      </ul>
     </div>
   </div>
   <div class="recipe">
     <div class="card accordion">
-      <img src="static/stock.jpg" alt="stock image" class="card-image-top">
+      <img src="static/poached.jpg" alt="Image of Poached Eggs" class="card-image-top">
         <div class="card-body">
-          <h3 class="card-title"><a href="{{ url_for('recipe') }}">Recipe title</a></h3>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h3 class="card-title"><a href="{{ url_for('recipe') }}">Perfect Poached Eggs</a></h3>
+          <p class="card-text">Poached eggs are a beautiful thing. The whites are just firm enough on the outside to contain an oozy, golden yolk in a round little egg package. And with a few tips, you too can learn how to poach an egg perfectly every time!</p>
         </div>
     </div>
-    <div class="recipe-details panel">
-      Recipe details here
+    <div class="recipe-details panel">Ingredients
+      <ul>
+        <li>Egg</li>
+        <li>Vinegar</li>
+      </ul>
     </div>
   </div>
   <div class="recipe">
     <div class="card accordion">
-      <img src="static/stock.jpg" alt="stock image" class="card-image-top">
+      <img src="static/Salad.jpg" alt="Image of Egg Salad" class="card-image-top">
         <div class="card-body">
-          <h3 class="card-title"><a href="{{ url_for('recipe') }}">Recipe title</a></h3>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h3 class="card-title"><a href="{{ url_for('recipe') }}">Creamy Avocado Egg Salad</a></h3>
+          <p class="card-text">Avocado egg salad takes your classic egg salad recipe and adds healthy avocado for a creamy, nutritious and tasty new recipe you’re sure to love. It’s paleo, whole30, low carb, keto and all around delicious.</p>
         </div>
       </div>
-      <div class="recipe-details panel">
-        Recipe details here
+      <div class="recipe-details panel">Ingredients
+        <ul>
+          <li>Egg</li>
+          <li>Avocado</li>
+          <li>Onion</li><br><br>
+          <li>Mayonnaise</li>
+          <li>Chives</li><br><br>
+          <li>Parsley</li>
+          <li>Lemon</li>
+          <li>Lettuce</li>
+        </ul>
       </div>
   </div>
   <div class="recipe">
     <div class="card accordion">
-        <img src="static/stock.jpg" alt="stock image" class="card-image-top">
+        <img src="static/Smoked.jpg" alt="Image of Smoked Salmon Deviled Eggs" class="card-image-top">
           <div class="card-body">
-            <h3 class="card-title"><a href="{{ url_for('recipe') }}">Recipe title</a></h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h3 class="card-title"><a href="{{ url_for('recipe') }}">Smoked Salmon Deviled Eggs</a></h3>
+            <p class="card-text">Smoked salmon deviled eggs take a classic appetizer (deviled eggs) to a stunning new level. Filled with fresh herbs, salty smoked salmon and briny capers, each bite is loaded with palate-pleasing flavor.</p>
           </div>
         </div>
-        <div class="recipe-details panel">
-          Recipe details here
+        <div class="recipe-details panel">Ingredients
+          <ul>
+            <li>Egg</li>
+            <li>Mayonnaise</li><br><br>
+            <li>Shallot</li>
+            <li>Mustard</li><br><br>
+            <li>Lemon</li>
+            <li>Dill</li><br><br>
+            <li>Smoked Salmon</li>
+            <li>Capers</li>
+          </ul>
         </div>
   </div>
   </div>
