@@ -18,34 +18,33 @@ with Joslenne Pena
     
     <body>
         <!--Navigation Bar-->
-        <ul class="nav-bar">
-            <li class="nav-logo">
+        <div class="nav-bar" id="top-nav">
+            <div class="nav-logo">
                 <a href="{{ url_for('home') }}">
                 <img src="static/logo.png" alt="Scrambled logo">
-                <!-- <h1>Scrambled</h1> -->
-                </a>  
-            </li>
-            <li><a href="{{ url_for('home') }}"><h1>Scrambled</h1></a></li>
-            <li>
-                <div class="search-container">
-                    <form action="{{ url_for('search') }}" method="post">
-                        <input type="text" placeholder="Search recipes by ingredient..." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-            </li>
-            <div class="nav-bar--right">
-                <li><a href="{{ url_for('home') }}">HOME</a></li>
-                <li><a href="{{ url_for('recipes') }}">RECIPES</a></li>
-                <li>
-                    {% if logged_in %}
-                    <a href="{{ url_for('profile') }}"><i class='fas fa-user-alt'></i></a>
-                    {% else %}
-                    <a href="{{ url_for('login') }}">LOG IN</a>
-                    {% endif %}
-                </li>
+                </a>
+                <a href="{{ url_for('home') }}"><h1>Scrambled</h1></a>  
             </div>
-        </ul>
+            <div class="search-container">
+                <form action="{{ url_for('search') }}" method="post">
+                    <input type="text" placeholder="Search recipes by ingredient..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class="spacer"></div>
+            <div class="nav-bar--right">
+                <a href="{{ url_for('home') }}">HOME</a>
+                <a href="{{ url_for('recipes') }}">RECIPES</a>
+                {% if logged_in %}
+                <a href="{{ url_for('profile') }}"><i class='fas fa-user-alt'></i></a>
+                {% else %}
+                <a href="{{ url_for('login') }}">LOG IN</a>
+                {% endif %}
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+
+        </div>
         {% block content %}
         {% endblock %}
     
