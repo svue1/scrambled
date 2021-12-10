@@ -55,6 +55,7 @@ def home():
 def recipes():
     return render_template("recipes.html", 
                             title="Recipes",
+                            all_recipes=recipe_data,
                             logged_in=current_user.is_authenticated)
 
 @app.route('/recipe')

@@ -7,63 +7,26 @@ with Joslenne Pena
 -->
 
 {% extends 'base.html' %}
-
 {% block content %}
-
-<div class="container">
-  <h1 class="page-title">Recipes</h1>
-  <hr>
-
-  <div class="recipes">
-    <div class="recipe">
+  <div class="container">
+    <h1 class="page-title">All Recipes</h1>
+    <hr>
+    {% for recipe in all_recipes %}
       <div class="card accordion">
         <img src="static/stock.jpg" alt="stock image" class="card-image-top">
-          <div class="card-body">
-            <h3 class="card-title"><a href="{{ url_for('recipe') }}">Recipe title</a></h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-      </div>
-      <div class="recipe-details panel">
-        Recipe details here
-      </div>
-    </div>
-    <div class="recipe">
-      <div class="card accordion">
-        <img src="static/stock.jpg" alt="stock image" class="card-image-top">
-          <div class="card-body">
-            <h3 class="card-title"><a href="{{ url_for('recipe') }}">Recipe title</a></h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-      </div>
-      <div class="recipe-details panel">
-        Recipe details here
-      </div>
-    </div>
-    <div class="recipe">
-      <div class="card accordion">
-        <img src="static/stock.jpg" alt="stock image" class="card-image-top">
-          <div class="card-body">
-            <h3 class="card-title"><a href="{{ url_for('recipe') }}">Recipe title</a></h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="recipe-details panel">
-          Recipe details here
+        <div class="card-body">
+          <h3 class="card-title"><a href="{{ url_for('recipe') }}">{{recipe['name']}}</a></h3>
         </div>
       </div>
-      <div class="recipe">
-        <div class="card accordion">
-          <img src="static/stock.jpg" alt="stock image" class="card-image-top">
-            <div class="card-body">
-              <h3 class="card-title"><a href="{{ url_for('recipe') }}">Recipe title</a></h3>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="recipe-details panel">
-            Recipe details here
-          </div>
+      <div class="allrecipe-details panel">Ingredients
+        <ul>
+          {% for ingredient in recipe['ingredients'] %}
+            <li class="card-ingredients">
+              {{ingredient['name']}}
+            </li>
+          {% endfor %}
+        </ul>
       </div>
+    {% endfor %}
   </div>
-</div>
-
 {% endblock %}

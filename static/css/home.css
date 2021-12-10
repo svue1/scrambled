@@ -38,7 +38,8 @@ a {
     font-family: "Work Sans", sans-serif;
     /* letter-spacing: 0.05em; */
     font-weight: 500;
-    font-size: 16px
+    font-size: 16px;
+    text-decoration: none;
 }
 .page-title {
     margin: 2% 2% 0 2% !important;
@@ -99,20 +100,16 @@ footer {
     display: block;
     color: black;
     text-align: center;
-    /* padding: 0 10px; */
+    font-weight: bold;
     text-decoration: none;
     float: left;
 }
 .nav-bar h1 {
     line-height: 0;
     font-size: 24px;
-    /* padding: 8px 10px; */
 }
 .nav-bar div a:hover {
     color: var(--orange);
-}
-.nav-bar div {
-    /* padding: 8px 10px; */
 }
 .nav-bar div input {
     border-radius: 5px;
@@ -161,7 +158,7 @@ footer {
 .nav-bar .icon {
     display: none;
 }
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 850px) {
     .nav-bar a:not(:first-child),
     .nav-bar .nav-bar--right {display: none;}
     .nav-bar a.icon {
@@ -169,7 +166,7 @@ footer {
         display: block;
     }
 }
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 850px) {
     .nav-bar .responsive {position: relative;}
     .nav-bar .responsive .icon {
         position: absolute;
@@ -180,7 +177,7 @@ footer {
         float: none;
         display: block;
         text-align: left;
-        background: ;
+        /* background: ; */
     }
 }
 /*Nav Bar CSS End*/
@@ -202,6 +199,7 @@ img {
     font-family: "Lora", serif;
     font-size: 32px;
     font-weight: 700;
+    color: black;
 }
 .recipe-of-the-day--title:hover {
     color: var(--orange);
@@ -212,9 +210,6 @@ img {
     background-color: var(--orange);
     padding: 1% 5% 1% 5%;
     color: white;
-}
-.recipe-of-the-day:hover {
-    color: var(--yellow);
 }
 .info-box {
     position: absolute;
@@ -257,22 +252,51 @@ hr {
 .card-body {
     padding: 5%;
 }
+.card-title a{
+    color: black;
+    font-weight: bold;
+}
+.card-title a:hover{
+    color: var(--orange);
+}
 .recipe {
-    margin: 1%;
+    margin: 3%;
 }
 .recipes {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: left;
-    margin: 2%;
+    margin: 3%;
     flex-wrap: wrap;
 }
 .recipe-details {
     margin: 1%;
-    width: 435%;
+    width: 100%;
     padding: 5%;
     background-color: white;
+    font-weight: bold;
+}
+.recipe-details ul li{
+    display: inline;
+    background-color: var(--yellow);
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 2%;
+}
+.allrecipe-details {
+    margin: 1%;
+    padding: 5%;
+    background-color: white;
+    font-weight: bold;
+    /* float:right; */
+}
+.card-ingredients {
+    display: inline;
+    background-color: var(--yellow);
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 2%;
 }
 /* Recipe Card CSS end */
 
