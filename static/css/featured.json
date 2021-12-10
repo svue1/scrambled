@@ -1,0 +1,190 @@
+[
+    {
+        "name": "Healthy Breakfast Egg Muffins",
+        "card-text": [
+            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!"
+        ],
+        "ingredients": [
+            {
+                "quantity": "4",
+                "name": "egg",
+                "type": "Protien"
+            },
+            {
+                "quantity": "1 package",
+                "name": "spinach",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1 package",
+                "name": "broccoli",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1 package",
+                "name": "kale",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1",
+                "name": "tomato",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1",
+                "name": "sausage",
+                "type": "Protien"
+            },
+            {
+                "quantity": "1/2 cup",
+                "name": "bacon",
+                "type": "Protien"
+            }
+        ],
+        "steps": [
+            "Steps for muffins."
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            420
+        ],
+        "imageURL": "Muffins.jpg"
+    },
+    {
+        "name": "Perfect Poached Eggs",
+        "card-text": [
+            "Poached eggs are a beautiful thing. The whites are just firm enough on the outside to contain an oozy, golden yolk in a round little egg package. And with a few tips, you too can learn how to poach an egg perfectly every time!"
+        ],
+        "ingredients": [
+            {
+                "quantity": "2",
+                "name": "egg",
+                "type": "Protien"
+            },
+            {
+                "quantity": "1 1/2 tbsp",
+                "name": "vinegar",
+                "type": "Condiments"
+            }
+        ],
+        "steps": [
+            "Steps for poached eggs."
+        ],
+        "timers": [
+            0
+        ],
+        "imageURL": "poached.jpg"
+    },
+    {
+        "name": "Creamy Avocado Egg Salad",
+        "card-text": [
+            "Avocado egg salad takes your classic egg salad recipe and adds healthy avocado for a creamy, nutritious and tasty new recipe you’re sure to love. It’s paleo, whole30, low carb, keto and all around delicious."
+        ],
+        "ingredients": [
+            {
+                "quantity": "1 quart",
+                "name": "egg",
+                "type": "Misc"
+            },
+            {
+                "quantity": "1 cup",
+                "name": "avocado",
+                "type": "Misc"
+            },
+            {
+                "quantity": "1/2 cup",
+                "name": "onion",
+                "type": "Misc"
+            },
+            {
+                "quantity": "1 tsp",
+                "name": "mayonnaise",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "1 tsp",
+                "name": "chives",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "1 tsp",
+                "name": "parsley",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "1 tsp",
+                "name": "lemon",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "1 tsp",
+                "name": "lettuce",
+                "type": "Condiments"
+            }
+        ],
+        "steps": [
+            "Steps for salad"
+        ],
+        "timers": [
+            0
+        ],
+        "imageURL": "Salad.jpg"
+    },
+    {
+        "name": "Smoked Salmon Deviled Egg",
+        "card-text": [
+            "Smoked salmon deviled eggs take a classic appetizer (deviled eggs) to a stunning new level. Filled with fresh herbs, salty smoked salmon and briny capers, each bite is loaded with palate-pleasing flavor."
+        ],
+        "ingredients": [
+            {
+                "quantity": "5 teaspoons",
+                "name": "egg",
+                "type": "Baking"
+            },
+            {
+                "quantity": "5 cups",
+                "name": "mayonnaise",
+                "type": "Baking"
+            },
+            {
+                "quantity": "4 tablespoons",
+                "name": "shallot",
+                "type": "Baking"
+            },
+            {
+                "quantity": "2 tablespoons",
+                "name": "mustard",
+                "type": "Baking"
+            },
+            {
+                "quantity": "2 teaspoons",
+                "name": "lemon",
+                "type": "Baking"
+            },
+            {
+                "quantity": "2 cups",
+                "name": "dill",
+                "type": "Misc"
+            },
+            {
+                "quantity": "1/4 cup",
+                "name": "smoked salmon",
+                "type": "Misc"
+            },
+            {
+                "quantity": "3/4 cup",
+                "name": "capers",
+                "type": "Dairy"
+            }
+        ],
+        "steps": [
+            "Deviled Eggs Steps"
+        ],
+        "timers": [
+            15
+        ],
+        "imageURL": "Smoked.jpg"
+    }
+]
