@@ -247,6 +247,20 @@ hr {
     font-weight: bold;
     padding: 2%;
 }
+.allrecipe-details {
+    margin: 1%;
+    padding: 5%;
+    background-color: white;
+    font-weight: bold;
+    float:right;
+}
+.card-ingredients {
+    display: inline;
+    background-color: var(--yellow);
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 2%;
+}
 /* Recipe Card CSS end */
 
 /* Recipe Page CSS */
