@@ -1,6 +1,7 @@
 [
     {
         "name": "Healthy Breakfast Egg Muffins",
+        "id": "4",
         "ctext": "Egg muffins are a healthy, easy, on-the-go breakfast. They are filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
         "time": "40 minutes",
         "serving": "12 servings",
@@ -42,12 +43,12 @@
     },
     {
         "name": "Perfect Poached Eggs",
-        "ctext":
-            "Poached eggs are a beautiful thing. The whites are just firm enough on the outside to contain an oozy, golden yolk in a round little egg package. And with a few tips, you too can learn how to poach an egg perfectly every time!",
-            "time": "8 minutes",
-            "serving": "1 serving",
-            "imageURL": "static/poached.jpg",
-            "ingredients": [
+        "id": "5",
+        "ctext":"Poached eggs are a beautiful thing. The whites are just firm enough on the outside to contain an oozy, golden yolk in a round little egg package. And with a few tips, you too can learn how to poach an egg perfectly every time!",
+        "time": "8 minutes",
+        "serving": "1 serving",
+        "imageURL": "static/poached.jpg",
+        "ingredients": [
             {
                 "quantity": "1",
                 "name": "egg",
@@ -69,12 +70,12 @@
     },
     {
         "name": "Creamy Avocado Egg Salad",
-        "ctext":
-            "Avocado egg salad takes your classic egg salad recipe and adds healthy avocado for a creamy, nutritious and tasty new recipe you’re sure to love. It’s paleo, whole30, low carb, keto and all around delicious.",
-            "time": "25 minutes",
-            "serving": "2 servings",
-            "imageURL": "static/Salad.jpg",
-            "ingredients": [
+        "id": "6",
+        "ctext":"Avocado egg salad takes your classic egg salad recipe and adds healthy avocado for a creamy, nutritious and tasty new recipe you’re sure to love. It’s paleo, whole30, low carb, keto and all around delicious.",
+        "time": "25 minutes",
+        "serving": "2 servings",
+        "imageURL": "static/Salad.jpg",
+        "ingredients": [
             {
                 "quantity": "3",
                 "name": "egg",
@@ -123,12 +124,12 @@
     },
     {
         "name": "Smoked Salmon Deviled Egg",
-        "ctext":
-            "Smoked salmon deviled eggs take a classic appetizer (deviled eggs) to a stunning new level. Filled with fresh herbs, salty smoked salmon and briny capers, each bite is loaded with palate-pleasing flavor.",
-            "time": "34 minutes",
-            "serving": "12 servings",
-            "imageURL": "static/Smoked.jpg",
-            "ingredients": [
+        "id": "7",
+        "ctext":"Smoked salmon deviled eggs take a classic appetizer (deviled eggs) to a stunning new level. Filled with fresh herbs, salty smoked salmon and briny capers, each bite is loaded with palate-pleasing flavor.",
+        "time": "34 minutes",
+        "serving": "12 servings",
+        "imageURL": "static/Smoked.jpg",
+        "ingredients": [
             {
                 "quantity": "6",
                 "name": "egg",
@@ -176,6 +177,40 @@
             "Scoop the yolks into a small bowl and place the egg whites on a serving plate.",
             "To make the filling, add the yolks, mayonnaise, dijon mustard, lemon juice, shallot, dill, salt and pepper to a bowl. Stir everything together until it's completely smooth.",
             "Use a spoon to add a portion of the deviled egg mixture back into the hole of each egg white. Then place a small piece of smoked salmon to top on each egg, along with a sprinkle of capers and fresh dill."
+        ]
+    },
+    {
+        "name": "The Best Scrambled Eggs",
+        "id": "8",
+        "ctext":"We have been eating scrambled eggs for days now. Why? Well, they are delicious. Obviously. But also EASY. You probably do not think you need a recipe for them, but maybe you do! And it sure helps to know how to make them the right way. Trust me. Stop making dry, crumbly, flavorless eggs! Follow these simple steps and recipe on how to make the absolute best scrambled eggs, which result in pillow-y, fluffy, creamy, flavorful eggs every time!",
+        "time": "6 minutes",
+        "serving": "2 servings",
+        "imageURL": "static/recipe_of_the_day.jpg",
+        "ingredients": [
+            {
+                "quantity": "4",
+                "name": "egg",
+                "type": "Protein"
+            },
+            {
+                "quantity": "1/4 cup",
+                "name": "half-n-half",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "1 tbsp",
+                "name": "butter",
+                "type": "Baking"
+            }
+        ],
+        "steps": [
+            "In a medium mixing bowl, aggressively whisk together the eggs, half-n-half, and salt until the mixture is uniform in color and texture, and is light and foamy, without any separate streaks of yolk or whites.",
+            "Melt the butter in a small nonstick pan over medium heat, until the butter coats the whole pan and just starts to foam.",
+            "Add the eggs to the center of the pan and immediately reduce the heat to medium-low.",
+            "Wait for the edges to just barely start to set, then using a rubber spatula, gently push the eggs from one end of the pan to the other. Continue this process, pausing in between swipes to allow the uncooked egg to settle on the warm pan and cook, gently pushing the liquid to form the curds.",
+            "When the eggs are mostly cooked, with big pillow-y folds, but still look pretty wet, slowly fold the eggs into itself just a couple times, bringing them together.",
+            "Remove from the heat when the eggs still shimmer with some moisture.",
+            "Transfer to serving plates. Finish with some freshly cracked pepper and chopped fresh herbs. Scrambled eggs have never tasted so good! "
         ]
     }
 ]

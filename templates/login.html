@@ -1,6 +1,6 @@
 <!--
-@uthor: Shouayee Vue
-Last Modified: 11-29-21
+@uthor: Shouayee Vue, Aberdeen Morrow
+Last Modified: 12-11-21
 Macalester College
 COMP 446 Internet Computing
 with Joslenne Pena
@@ -8,7 +8,7 @@ with Joslenne Pena
 {% extends 'base.html' %}
 
 {% block header %}
-<link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="login.css">
 {% endblock %}
 
 {% with messages = get_flashed_messages() %}
@@ -20,6 +20,7 @@ with Joslenne Pena
     </ul>
   {% endif %}
 {% endwith %}
+
 {% block content %}
     {% if alert %}
         <p class=error><strong>Error:</strong> {{ error }}
@@ -35,4 +36,3 @@ with Joslenne Pena
         <input class="login" name="action" type="submit" value="Log In"></input>
     </form>
 {% endblock %}
-

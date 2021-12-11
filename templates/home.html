@@ -1,16 +1,28 @@
+<!--
+@author: Shouayee Vue, Aberdeen Morrow
+Last Modified: 12-11-21
+Macalester College
+COMP 446 Internet Computing
+with Joslenne Pena
+-->
+
 {% extends 'base.html' %}
 
 {% block content %}
 
 <!--Recipe of the Day Section-->
 <div class="feature">
-  <img src="static/recipe_of_the_day.jpg" alt="Image of the Best Scrambled Eggs" class="recipe-of-the-day--image">
-  <div class="info-box">
-    <a href="{{ url_for('recipe') }}">
-      <h1 class="recipe-of-the-day--title">The Best Scrambled Eggs</h1>
-    </a>
-    <p>We’ve been eating scrambled eggs for days now. Why? Well, they’re delicious. Obviously. But also EASY. You probably don’t think you need a recipe for them, but maybe you do! And it sure helps to know how to make them the right way. Trust me. Stop making dry, crumbly, flavorless eggs! Follow these simple steps and recipe on how to make the absolute best scrambled eggs, which result in pillow-y, fluffy, creamy, flavorful eggs every time!</p>
-  </div>
+{% for recipe in featured_recipes %}
+  {% if recipe['id']=='8' %}
+    <img src="{{recipe['imageURL']}}" alt="Image of the Best Scrambled Eggs" class="recipe-of-the-day--image">
+    <div class="info-box">
+      <a href="http://localhost:5000/recipes/{{recipe['id']}}">
+        <h1 class="recipe-of-the-day--title">{{recipe['name']}}</h1>
+      </a>
+      <p>{{recipe['ctext']}}</p>
+    </div>
+  {% endif %}
+{% endfor %}
   <div class="recipe-of-the-day"><h3>RECIPE OF THE DAY</h3></div>
 </div> 
 
@@ -19,22 +31,26 @@
 <hr></br>
 <div class="recipes">
 {% for recipe in featured_recipes %}
-  <div class="recipe">
-    <div class="card accordion">
-      <img src="{{recipe['imageURL']}}" alt="{{recipe['imageURL']}}" class="card-image-top">
-      <div class="card-body">
-        <h3 class="card-title"><a href="{{ url_for('recipe') }}">{{recipe['name']}}</a></h3>
-        <p class="card-text">{{recipe['ctext']}}</p>
+  {% if recipe['id']=='8' %}
+    <!--Do nothing-->
+  {% else %}
+    <div class="recipe">
+      <div class="card accordion">
+        <img src="{{recipe['imageURL']}}" alt="{{recipe['imageURL']}}" class="card-image-top">
+        <div class="card-body">
+          <h3 class="card-title"><a href="http://localhost:5000/recipes/{{recipe['id']}}">{{recipe['name']}}</a></h3>
+          <p class="card-text">{{recipe['ctext']}}</p>
+        </div>
+      </div>
+      <div class="recipe-details panel">Ingredients
+        <ul>
+        {% for ingredient in recipe['ingredients'] %}
+          <li class="card-ingredients">{{ingredient['name']}}</li><br>
+        {% endfor %}
+        </ul>
       </div>
     </div>
-    <div class="recipe-details panel">Ingredients
-      <ul>
-      {% for ingredient in recipe['ingredients'] %}
-        <li class="card-ingredients">{{ingredient['name']}}</li><br>
-      {% endfor %}
-      </ul>
-    </div>
-  </div>
+  {% endif %}
 {% endfor %}
 </div>
 

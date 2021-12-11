@@ -1,5 +1,5 @@
-# @author: Aberdeen Morrow
-# Last Modified: 12-02-21
+# @author: Aberdeen Morrow, Shouayee Vue
+# Last Modified: 12-11-21
 # Macalester College
 # COMP 446 Internet Computing
 # with Joslenne Pena
@@ -63,15 +63,15 @@ def recipes():
                             all_recipes=recipe_data,
                             logged_in=current_user.is_authenticated)
 
-@app.route('/recipe')
+@app.route('/recipes/4')
 def recipe():
+    for recipe in recipe_data:
+        if recipe['id'] == "4":
+            one_recipe=recipe
     return render_template("recipe.html", 
                             title="Recipe",
+                            recipe=one_recipe,
                             logged_in=current_user.is_authenticated)
-# @app.route("/recipe/<id>")
-# def recipe(id):
-#     return render_template("recipe.html", title=recipe['name'], recipe=recipe)
-    # return render_template("recipe.html", title=db.query.get(id).title, recipe=db.query.get(id))
 
 @app.route('/login', methods=['GET','POST'])
 def login():

@@ -1,6 +1,6 @@
 <!--
-@author: Aberdeen Morrow
-Last Modified: 12-02-21
+@author: Shouayee Vue, Aberdeen Morrow
+Last Modified: 12-11-21
 Macalester College
 COMP 446 Internet Computing
 with Joslenne Pena
@@ -9,29 +9,29 @@ with Joslenne Pena
 {% extends 'base.html' %}
 
 {% block content %}
+
 <div class="container recipe-container">
-    <h1>Title</h1>
+    <h1>{{recipe['name']}}</h1>
     <hr>
     <div class="recipe-container-details">
+        <p>{{recipe['serving']}} : {{recipe['time']}}</p>
+        <p>{{recipe['ctext']}}</p>
         <div id="ingredients">
-        <h3>Ingredients</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            <h3>Ingredients</h3>
+            <ul>
+            {% for ingredient in recipe['ingredients'] %}
+                <li>{{ingredient['quantity']}} - {{ingredient['name']}}</li>
+            {% endfor %}
+            </ul>
         </div>
-    <img src="static/stock.jpg" alt="stock image" id="recipe-img">
-    <h3 class="full-width">Instructions</h3>
-    <ol id="instructions">
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-    </ol>
-</div>
+        <img src="{{recipe['imageURL']}}" alt="{{recipe['imageURL']}}" id="recipe-img">
+        <h3 class="full-width">Instructions</h3>
+        <ol id="instructions">
+            {% for step in recipe['steps'] %}
+            <li>{{step}}</li>
+            {% endfor %}
+        </ol>
+    </div>
 </div>
 
 {% endblock %}

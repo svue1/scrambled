@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 @author: Shouayee Vue, Aberdeen Morrow
-Last Modified: 12-10-21
+Last Modified: 12-11-21
 Macalester College
 COMP 446 Internet Computing
 with Joslenne Pena
@@ -11,7 +11,6 @@ with Joslenne Pena
         <title>Scrambled</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
         <script src="https://kit.fontawesome.com/54e37e037b.js" crossorigin="anonymous"></script>
-        <!-- Import google fonts using Google Fonts API -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:700|Rubik:500,700|Work+Sans:500">
     </head>
     
@@ -19,9 +18,7 @@ with Joslenne Pena
         <!--Navigation Bar-->
         <div class="nav-bar" id="top-nav">
             <div class="nav-logo">
-                <a href="{{ url_for('home') }}">
-                <img src="static/logo.png" alt="Scrambled logo">
-                </a>
+                <a href="{{ url_for('home') }}"><img src="static/logo.png" alt="Scrambled logo"></a>
                 <a href="{{ url_for('home') }}"><h1>Scrambled</h1></a>  
             </div>
             <div class="search-container">
@@ -40,10 +37,9 @@ with Joslenne Pena
                 <a href="{{ url_for('login') }}">LOG IN</a>
                 {% endif %}
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i></a>
-
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </div>
+
         {% block content %}
         {% endblock %}
     
@@ -64,8 +60,8 @@ with Joslenne Pena
                     <a href="{{ url_for('logout') }}">LOG OUT</a>
                     {% else %}
                     <a href="{{ url_for('login') }}">LOG IN</a>
-                    {% endif %}
+                {% endif %}
             </div>
-          </div>
+        </div>
     </footer>
 </html> 
