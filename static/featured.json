@@ -2,6 +2,9 @@
     {
         "name": "Healthy Breakfast Egg Muffins",
         "ctext": "Egg muffins are a healthy, easy, on-the-go breakfast. They are filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
+        "time": "40 minutes",
+        "serving": "12 servings",
+        "imageURL": "static/Muffins.jpg",
         "ingredients": [
             {
                 "quantity": "12",
@@ -35,16 +38,16 @@
             "Fill a pot with 1-inch of water and bring it to a boil. Insert a steamer basket, then add the broccoli florets. Cover with a lid and cook for 5-6 minutes. Remove the steamer basket and broccoli, and let cool for a couple of minutes. Then dice the broccoli into small pieces.",
             "Fill the muffin tray about 1/2 full with pieces of broccoli, bacon, and cheddar cheese. Sprinkle with chives. Then fill with egg mixture about 90% full and bake at 350F for 20-25 minutes.",
             "Let the muffins cool slightly, then run a knife along the outer edge and remove each egg muffin. Enjoy immediately or store in the fridge or freezer."
-        ],
-        "time": "40 minutes",
-        "serving": "12 servings",
-        "imageURL": "static/Muffins.jpg"
+        ]
     },
     {
         "name": "Perfect Poached Eggs",
         "ctext":
             "Poached eggs are a beautiful thing. The whites are just firm enough on the outside to contain an oozy, golden yolk in a round little egg package. And with a few tips, you too can learn how to poach an egg perfectly every time!",
-        "ingredients": [
+            "time": "8 minutes",
+            "serving": "1 serving",
+            "imageURL": "static/poached.jpg",
+            "ingredients": [
             {
                 "quantity": "1",
                 "name": "egg",
@@ -62,16 +65,16 @@
             "Stir the vinegar into the water and create a vortex. Add the egg to the middle of the vortex and cook the egg for 3 minutes",
             "Remove the egg with a slotted spoon and dab it on a paper towel to remove any excess water. Serve immediately.",
             "Alternatively, if making the poached eggs for meal prep or ahead of time, transfer the cooked poached eggs to an ice water bath and refrigerate for a couple of days. When ready to serve, add boiling water to a bowl, then add the cold poached egg and submerge for 20-30 seconds or until warmed through. Remove the poached egg with a slotted spoon, dab dry and serve immediately."
-        ],
-        "time": "8 minutes",
-        "serving": "1 serving",
-        "imageURL": "static/poached.jpg"
+        ]
     },
     {
         "name": "Creamy Avocado Egg Salad",
         "ctext":
             "Avocado egg salad takes your classic egg salad recipe and adds healthy avocado for a creamy, nutritious and tasty new recipe you’re sure to love. It’s paleo, whole30, low carb, keto and all around delicious.",
-        "ingredients": [
+            "time": "25 minutes",
+            "serving": "2 servings",
+            "imageURL": "static/Salad.jpg",
+            "ingredients": [
             {
                 "quantity": "3",
                 "name": "egg",
@@ -116,16 +119,16 @@
         "steps": [
             "Add all of the ingredients to a mixing bowl and stir to combine.",
             "Eat the avocado egg salad plain, topped on your favorite bread or on lettuce leaves."
-        ],
-        "time": "25 minutes",
-        "serving": "2 servings",
-        "imageURL": "static/Salad.jpg"
+        ]
     },
     {
         "name": "Smoked Salmon Deviled Egg",
         "ctext":
             "Smoked salmon deviled eggs take a classic appetizer (deviled eggs) to a stunning new level. Filled with fresh herbs, salty smoked salmon and briny capers, each bite is loaded with palate-pleasing flavor.",
-        "ingredients": [
+            "time": "34 minutes",
+            "serving": "12 servings",
+            "imageURL": "static/Smoked.jpg",
+            "ingredients": [
             {
                 "quantity": "6",
                 "name": "egg",
@@ -173,9 +176,6 @@
             "Scoop the yolks into a small bowl and place the egg whites on a serving plate.",
             "To make the filling, add the yolks, mayonnaise, dijon mustard, lemon juice, shallot, dill, salt and pepper to a bowl. Stir everything together until it's completely smooth.",
             "Use a spoon to add a portion of the deviled egg mixture back into the hole of each egg white. Then place a small piece of smoked salmon to top on each egg, along with a sprinkle of capers and fresh dill."
-        ],
-        "time": "34 minutes",
-        "serving": "12 servings",
-        "imageURL": "static/Smoked.jpg"
+        ]
     }
 ]

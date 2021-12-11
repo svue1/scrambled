@@ -1,35 +1,30 @@
-
-
 [
     {
         "name": "Crock Pot Roast",
-        "ctext": 
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
+        "ctext": "Amazing flavor, and so simple! No salt needed here. This recipe is to die for with all the richness in flavors. Serve some of this tenderness to your guest this coming holiday!",
+        "time": "9 hours and 5 minutes",
+        "serving": "8 servings",
+        "imageURL": "http://img.sndimg.com/food/image/upload/w_266/v1/img/recipes/27/20/8/picVfzLZo.jpg",
         "ingredients": [
             {
                 "quantity": "1",
                 "name": "beef roast",
-                "type": "Meat"
+                "type": "Protein"
             },
             {
                 "quantity": "1 package",
-                "name": "brown gravy mix",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1 package",
-                "name": "dried Italian salad dressing mix",
+                "name": "gravy",
                 "type": "Condiments"
             },
             {
                 "quantity": "1 package",
-                "name": "dry ranch dressing mix",
+                "name": "dried Italian dressing",
                 "type": "Condiments"
             },
             {
-                "quantity": "1/2 cup",
-                "name": "water",
-                "type": "Drinks"
+                "quantity": "1 package",
+                "name": "dry ranch dressing",
+                "type": "Condiments"
             }
         ],
         "steps": [
@@ -37,35 +32,24 @@
             "Mix the dried mixes together in a bowl and sprinkle over the roast.",
             "Pour the water around the roast.",
             "Cook on low for 7-9 hours."
-        ],
-        "timers": [
-            0,
-            0,
-            0,
-            420
-        ],
-        "imageURL": "http://img.sndimg.com/food/image/upload/w_266/v1/img/recipes/27/20/8/picVfzLZo.jpg",
-        "originalURL": "http://www.food.com/recipe/to-die-for-crock-pot-roast-27208"
+        ]
     },
     {
         "name": "Roasted Asparagus",
-        "ctext": 
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
+        "ctext": "Look no further for the most simple and easy way to cook your asparagus! Quick, but also full of flavor, your asparagus will be off the plate in no time!",
+        "time": "25 minutes",
+        "serving": "4 servings",
+        "imageURL": "http://img.sndimg.com/food/image/upload/w_266/v1/img/recipes/50/84/7/picMcSyVd.jpg",
         "ingredients": [
             {
                 "quantity": "1 lb",
-                "name": " asparagus",
+                "name": "asparagus",
                 "type": "Produce"
             },
             {
                 "quantity": "1 1/2 tbsp",
                 "name": "olive oil",
                 "type": "Condiments"
-            },
-            {
-                "quantity": "1/2 tsp",
-                "name": "kosher salt",
-                "type": "Baking"
             }
         ],
         "steps": [
@@ -79,431 +63,24 @@
             "They should be tender when pierced with the tip of a knife.",
             "The tips of the spears will get very brown but watch them to prevent burning.",
             "They are great plain, but sometimes I serve them with a light vinaigrette if we need something acidic to balance out our meal."
-        ],
-        "timers": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            10,
-            0,
-            0,
-            0
-        ],
-        "imageURL": "http://img.sndimg.com/food/image/upload/w_266/v1/img/recipes/50/84/7/picMcSyVd.jpg",
-        "originalURL": "http://www.food.com/recipe/roasted-asparagus-50847"
+        ]
     },
     {
-        "name": "Curried Lentils and Rice",
-        "ctext": 
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
-        "ingredients": [
-            {
-                "quantity": "1 quart",
-                "name": "beef broth",
-                "type": "Misc"
-            },
-            {
-                "quantity": "1 cup",
-                "name": "dried green lentils",
-                "type": "Misc"
-            },
-            {
-                "quantity": "1/2 cup",
-                "name": "basmati rice",
-                "type": "Misc"
-            },
-            {
-                "quantity": "1 tsp",
-                "name": "curry powder",
-                "type": "Condiments"
-            },
-            {
-                "quantity": "1 tsp",
-                "name": "salt",
-                "type": "Condiments"
-            }
-        ],
-        "steps": [
-            "Bring broth to a low boil.",
-            "Add curry powder and salt.",
-            "Cook lentils for 20 minutes.",
-            "Add rice and simmer for 20 minutes.",
-            "Enjoy!"
-        ],
-        "timers": [
-            0,
-            0,
-            20,
-            20,
-            0
-        ],
-        "imageURL": "http://dagzhsfg97k4.cloudfront.net/wp-content/uploads/2012/05/lentils3.jpg"
-    },
-    {
-        "name": "Big Night Pizza",
-        "ctext": 
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
-        "ingredients": [
-            {
-                "quantity": "5 teaspoons",
-                "name": "yeast",
-                "type": "Baking"
-            },
-            {
-                "quantity": "5 cups",
-                "name": "flour",
-                "type": "Baking"
-            },
-            {
-                "quantity": "4 tablespoons",
-                "name": "vegetable oil",
-                "type": "Baking"
-            },
-            {
-                "quantity": "2 tablespoons",
-                "name": "sugar",
-                "type": "Baking"
-            },
-            {
-                "quantity": "2 teaspoons",
-                "name": "salt",
-                "type": "Baking"
-            },
-            {
-                "quantity": "2 cups",
-                "name": "hot water",
-                "type": "Misc"
-            },
-            {
-                "quantity": "1/4 cup",
-                "name": "pizza sauce",
-                "type": "Misc"
-            },
-            {
-                "quantity": "3/4 cup",
-                "name": "mozzarella cheese",
-                "type": "Dairy"
-            }
-        ],
-        "steps": [
-            "Add hot water to yeast in a large bowl and let sit for 15 minutes.",
-            "Mix in oil, sugar, salt, and flour and let sit for 1 hour.",
-            "Knead the dough and spread onto a pan.",
-            "Spread pizza sauce and sprinkle cheese.",
-            "Add any optional toppings as you wish.",
-            "Bake at 400 deg Fahrenheit for 15 minutes.",
-            "Enjoy!"
-        ],
-        "timers": [
-            15,
-            60,
-            0,
-            0,
-            0,
-            15,
-            0
-        ],
-        "imageURL": "http://upload.wikimedia.org/wikipedia/commons/c/c7/Spinach_pizza.jpg"
-    },
-    {
-        "name": "Cranberry and Apple Stuffed Acorn Squash Recipe",
-        "ctext": 
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
-        "ingredients": [
-            {
-                "quantity": "2",
-                "name": "acorn squash",
-                "type": "Produce"
-            },
-            {
-                "quantity": "1",
-                "name": "boiling water",
-                "type": "Drinks"
-            },
-            {
-                "quantity": "2",
-                "name": "apples chopped into 1.4 inch pieces",
-                "type": "Produce"
-            },
-            {
-                "quantity": "1/2 cup",
-                "name": "dried cranberries",
-                "type": "Produce"
-            },
-            {
-                "quantity": "1 teaspoon",
-                "name": "cinnamon",
-                "type": "Baking"
-            },
-            {
-                "quantity": "2 tablespoons",
-                "name": "melted butter",
-                "type": "Dairy"
-            }
-        ],
-        "steps": [
-            "Cut squash in half, remove seeds.",
-            "Place squash in baking dish, cut-side down.",
-            "Pour 1/4-inch water into dish.",
-            "Bake for 30 minutes at 350 degrees F.",
-            "In large bowl, combine remaining ingredients.",
-            "Remove squash from oven, fill with mix.",
-            "Bake for 30-40 more minutes, until squash tender.",
-            "Enjoy!"
-        ],
-        "timers": [
-            0,
-            0,
-            0,
-            30,
-            0,
-            0,
-            30,
-            0
-        ],
-        "imageURL": "http://elanaspantry.com/wp-content/uploads/2008/10/acorn_squash_with_cranberry.jpg",
-        "originalURL": ""
-    },
-    {
-        "name": "Mic's Yorkshire Puds",
-        "ctext": 
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
-        "ingredients": [
-            {
-                "quantity": "200g",
-                "name": "plain flour",
-                "type": "Baking"
-            },
-            {
-                "quantity": "3",
-                "name": "eggs",
-                "type": "Dairy"
-            },
-            {
-                "quantity": "300ml",
-                "name": "milk",
-                "type": "Dairy"
-            },
-            {
-                "quantity": "3 tbsp",
-                "name": "vegetable oil",
-                "type": "Condiments"
-            }
-        ],
-        "steps": [
-            "Put the flour and some seasoning into a large bowl.",
-            "Stir in eggs, one at a time.",
-            "Whisk in milk until you have a smooth batter.",
-            "Chill in the fridge for at least 30 minutes.",
-            "Heat oven to 220C/gas mark 7.",
-            "Pour the oil into the holes of a 8-hole muffin tin.",
-            "Heat tin in the oven for 5 minutes.",
-            "Ladle the batter mix into the tin.",
-            "Bake for 30 minutes until well browned and risen."
-        ],
-        "timers": [
-            0,
-            0,
-            0,
-            30,
-            0,
-            0,
-            5,
-            0,
-            30
-        ],
-        "imageURL": "http://upload.wikimedia.org/wikipedia/commons/f/f9/Yorkshire_Pudding.jpg",
-        "originalURL": "http://upload.wikimedia.org/wikipedia/commons/f/f9/Yorkshire_Pudding.jpg"
-    },
-    {
-        "name": "Old-Fashioned Oatmeal Cookies",
-        "ctext": 
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
-        "ingredients": [
-            {
-                "quantity": "1 cup",
-                "name": "raisins",
-                "type": "Produce"
-            },
-            {
-                "quantity": "1",
-                "name": "cup water",
-                "type": "Drinks"
-            },
-            {
-                "quantity": "3/4 cup",
-                "name": "shortening",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1 1/2 cups",
-                "name": "sugar",
-                "type": "Baking"
-            },
-            {
-                "quantity": "2 1/2 cups",
-                "name": "flour",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1 tsp.",
-                "name": "soda",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1 tsp.",
-                "name": "salt",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1 tsp.",
-                "name": "cinnamon",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1/2 tsp.",
-                "name": "baking powder",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1/2 tsp.",
-                "name": "cloves",
-                "type": "Baking"
-            },
-            {
-                "quantity": "2 cups",
-                "name": "oats",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1/2 cup",
-                "name": "chopped nuts",
-                "type": "Baking"
-            }
-        ],
-        "steps": [
-            "Simmer raisins and water over medium heat until raisins are plump, about 15 minutes.",
-            "Drain raisins, reserving the liquid.",
-            "Add enough water to reserved liquid to measure 1/2 cup.",
-            "Heat oven to 400°.",
-            "Mix thoroughly shortening, sugar, eggs and vanilla.",
-            "Stir in reserved liquid.",
-            "Blend in remaining ingredients.",
-            "Drop dough by rounded teaspoonfuls about 2 inches apart onto ungreased baking sheet.",
-            "Bake 8 to 10 minutes or until light brown.",
-            "About 6 1/2 dozen cookies."
-        ],
-        "timers": [
-            15,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            8,
-            0
-        ],
-        "imageURL": "http://s3.amazonaws.com/gmi-digital-library/65caecf7-a8f7-4a09-8513-2659cf92871e.jpg",
-        "originalURL": "#"
-    },
-    {
-        "name": "Blueberry Oatmeal Squares",
-        "ctext": 
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
-        "ingredients": [
-            {
-                "quantity": "2-1/2 cups",
-                "name": "rolled oats, (not instant)",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1-1/4 cups",
-                "name": "all-purpose flour",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1 tbsp",
-                "name": "grated orange rind",
-                "type": "Produce"
-            },
-            {
-                "quantity": "1/4 tsp",
-                "name": "salt",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1 cup",
-                "name": "cold butter, cubed",
-                "type": "Baking"
-            },
-            {
-                "quantity": "3/4 cup",
-                "name": "packed brown sugar",
-                "type": "Baking"
-            },
-            {
-                "quantity": "3 cups",
-                "name": "fresh blueberries",
-                "type": "Produce"
-            },
-            {
-                "quantity": "1/2 cup",
-                "name": "granulated sugar",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1/3 cup",
-                "name": "orange juice",
-                "type": "Produce"
-            },
-            {
-                "quantity": "4 tsp",
-                "name": "cornstarch",
-                "type": "Baking"
-            }
-        ],
-        "steps": [
-            "Filling: In saucepan, bring blueberries, sugar and orange juice to boil; reduce heat and simmer until tender, about 10 minutes.",
-            "Whisk cornstarch with 2 tbsp (25 mL) water; whisk into blueberries and boil, stirring, until thickened, about 1 minute.",
-            "Place plastic wrap directly on surface; refrigerate until cooled, about 1 hour.",
-            "In large bowl, whisk together oats, flour, sugar, orange rind and salt ; with pastry blender, cut in butter until in coarse crumbs.",
-            "Press half into 8-inch (2 L) square parchment paper–lined metal cake pan; spread with blueberry filling.",
-            "Bake in centre of 350°F oven until light golden, about 45 minutes.",
-            "Let cool on rack before cutting into squares.",
-            "(Make-ahead: Cover and refrigerate for up to 2 days or overwrap with heavy-duty foil and freeze for up to 2 weeks.)"
-        ],
-        "timers": [
-            10,
-            1,
-            60,
-            0,
-            0,
-            45,
-            0,
-            0
-        ],
-        "imageURL": "http://www.canadianliving.com/img/photos/biz/blueberry-oatmeal-squares5801359401371.jpg",
-        "originalURL": "http://www.canadianliving.com/food/blueberry_oatmeal_squares.php"
-    },
-    {
-        "name": "Curried chicken salad",
-        "ctext": 
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
+        "name": "Curried Chicken Salad",
+        "ctext": "Take dinner outside with this simple and fresh picnic supper. Pair with a light chardonnay to complement the curry and mango.",
+        "time": "40 minutes",
+        "serving": "6 servings",
+        "imageURL": "http://www.chatelaine.com/wp-content/uploads/2013/05/Curried-chicken-salad.jpg",
         "ingredients": [
             {
                 "quantity": "3",
-                "name": "skinless, boneless chicken breasts, halved lengthwise",
-                "type": "Meat"
+                "name": "chicken breast",
+                "type": "Protein"
             },
             {
                 "quantity": "1/2 cup",
                 "name": "mayonnaise",
-                "type": "Baking"
+                "type": "Condiments"
             },
             {
                 "quantity": "1 tbsp",
@@ -511,23 +88,18 @@
                 "type": "Produce"
             },
             {
-                "quantity": "1 tbsp ",
+                "quantity": "1 tbsp",
                 "name": "lemon juice",
-                "type": "Produce"
+                "type": "Condiments"
             },
             {
                 "quantity": "1 1/2 tsp",
                 "name": "curry powder",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1/4 tsp",
-                "name": "salt",
-                "type": "Baking"
+                "type": "Condiments"
             },
             {
                 "quantity": "2",
-                "name": "ripe mangoes, diced",
+                "name": "mango",
                 "type": "Produce"
             },
             {
@@ -537,27 +109,27 @@
             },
             {
                 "quantity": "2",
-                "name": "green onions, thinly sliced",
+                "name": "green onion",
                 "type": "Produce"
             },
             {
                 "quantity": "1",
-                "name": "celery stalk, finely chopped",
+                "name": "celery",
                 "type": "Produce"
             },
             {
                 "quantity": "6 leaves",
-                "name": "Boston lettuce",
+                "name": "lettuce",
                 "type": "Produce"
             },
             {
                 "quantity": "6",
-                "name": "English muffins, toasted",
+                "name": "english muffins",
                 "type": "Misc"
             }
         ],
         "steps": [
-            "ARRANGE chicken in a single layer in a large pot.",
+            "Arrange chicken in a single layer in a large pot.",
             "Add water to just cover.",
             "Bring to a boil over medium-high.",
             "Flip chicken, reduce heat to medium and simmer until cooked, about 6 more min.",
@@ -566,19 +138,185 @@
             "Using 2 forks, shred chicken, then stir into mayo mixture with mango, cranberries, green onions and celery.",
             "Divide among muffins with lettuce leaves",
             "Sandwich with tops"
+        ]
+    },
+    {
+        "name": "Healthy Breakfast Egg Muffins",
+        "ctext": "Egg muffins are a healthy, easy, on-the-go breakfast. They are filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
+        "time": "40 minutes",
+        "serving": "12 servings",
+        "imageURL": "static/Muffins.jpg",
+        "ingredients": [
+            {
+                "quantity": "12",
+                "name": "egg",
+                "type": "Protien"
+            },
+            {
+                "quantity": "4 cups",
+                "name": "broccoli",
+                "type": "Produce"
+            },
+            {
+                "quantity": "3 slices",
+                "name": "bacon",
+                "type": "Protien"
+            },
+            {
+                "quantity": "1 cup",
+                "name": "cheese",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "1/4 cup",
+                "name": "chives",
+                "type": "Produce"
+            }
         ],
-        "timers": [
-            0,
-            0,
-            0,
-            6,
-            0,
-            0,
-            0,
-            0,
-            0
+        "steps": [
+            "Add the 12 eggs to a large 4-cup measuring cup and season with salt and pepper. Whisk the eggs until fluffy.",
+            "Slice the bacon into 1/2-inch thick pieces. Add to a saute pan over medium heat, stirring frequently and cook until crispy. Use a slotted spoon to remove the bacon to a paper towel.",
+            "Fill a pot with 1-inch of water and bring it to a boil. Insert a steamer basket, then add the broccoli florets. Cover with a lid and cook for 5-6 minutes. Remove the steamer basket and broccoli, and let cool for a couple of minutes. Then dice the broccoli into small pieces.",
+            "Fill the muffin tray about 1/2 full with pieces of broccoli, bacon, and cheddar cheese. Sprinkle with chives. Then fill with egg mixture about 90% full and bake at 350F for 20-25 minutes.",
+            "Let the muffins cool slightly, then run a knife along the outer edge and remove each egg muffin. Enjoy immediately or store in the fridge or freezer."
+        ]
+    },
+    {
+        "name": "Perfect Poached Eggs",
+        "ctext":
+            "Poached eggs are a beautiful thing. The whites are just firm enough on the outside to contain an oozy, golden yolk in a round little egg package. And with a few tips, you too can learn how to poach an egg perfectly every time!",
+            "time": "8 minutes",
+            "serving": "1 serving",
+            "imageURL": "static/poached.jpg",
+            "ingredients": [
+            {
+                "quantity": "1",
+                "name": "egg",
+                "type": "Protien"
+            },
+            {
+                "quantity": "2 tbsp",
+                "name": "vinegar",
+                "type": "Condiments"
+            }
         ],
-        "imageURL": "http://www.chatelaine.com/wp-content/uploads/2013/05/Curried-chicken-salad.jpg",
-        "originalURL": "http://www.chatelaine.com/recipe/stovetop-cooking-method/curried-chicken-salad/"
+        "steps": [
+            "Bring a large pot of water to a boil, then reduce the heat to low.",
+            "While waiting for the water to boil, crack an egg into a small fine mesh sieve over a bowl. Swirl the egg in the sieve until all the liquidy egg whites have been removed. Then, place the egg in a ramekin.",
+            "Stir the vinegar into the water and create a vortex. Add the egg to the middle of the vortex and cook the egg for 3 minutes",
+            "Remove the egg with a slotted spoon and dab it on a paper towel to remove any excess water. Serve immediately.",
+            "Alternatively, if making the poached eggs for meal prep or ahead of time, transfer the cooked poached eggs to an ice water bath and refrigerate for a couple of days. When ready to serve, add boiling water to a bowl, then add the cold poached egg and submerge for 20-30 seconds or until warmed through. Remove the poached egg with a slotted spoon, dab dry and serve immediately."
+        ]
+    },
+    {
+        "name": "Creamy Avocado Egg Salad",
+        "ctext":
+            "Avocado egg salad takes your classic egg salad recipe and adds healthy avocado for a creamy, nutritious and tasty new recipe you’re sure to love. It’s paleo, whole30, low carb, keto and all around delicious.",
+            "time": "25 minutes",
+            "serving": "2 servings",
+            "imageURL": "static/Salad.jpg",
+            "ingredients": [
+            {
+                "quantity": "3",
+                "name": "egg",
+                "type": "Protein"
+            },
+            {
+                "quantity": "1",
+                "name": "avocado",
+                "type": "Produce"
+            },
+            {
+                "quantity": "2 tbsp",
+                "name": "onion",
+                "type": "Produce"
+            },
+            {
+                "quantity": "2 tsp",
+                "name": "mayonnaise",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "1 tbsp",
+                "name": "chives",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1 tbsp",
+                "name": "parsley",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1 tsp",
+                "name": "lemon juice",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "3 leaves",
+                "name": "lettuce",
+                "type": "Produce"
+            }
+        ],
+        "steps": [
+            "Add all of the ingredients to a mixing bowl and stir to combine.",
+            "Eat the avocado egg salad plain, topped on your favorite bread or on lettuce leaves."
+        ]
+    },
+    {
+        "name": "Smoked Salmon Deviled Egg",
+        "ctext":
+            "Smoked salmon deviled eggs take a classic appetizer (deviled eggs) to a stunning new level. Filled with fresh herbs, salty smoked salmon and briny capers, each bite is loaded with palate-pleasing flavor.",
+            "time": "34 minutes",
+            "serving": "12 servings",
+            "imageURL": "static/Smoked.jpg",
+            "ingredients": [
+            {
+                "quantity": "6",
+                "name": "egg",
+                "type": "Protein"
+            },
+            {
+                "quantity": "3 tbsp",
+                "name": "mayonnaise",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "1 tbsp",
+                "name": "shallot",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1 tsp",
+                "name": "mustard",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "1 tsp",
+                "name": "lemon juice",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "1 tsp",
+                "name": "dill",
+                "type": "Produce"
+            },
+            {
+                "quantity": "2 oz",
+                "name": "smoked salmon",
+                "type": "Protein"
+            },
+            {
+                "quantity": "1 tbsp",
+                "name": "capers",
+                "type": "Produce"
+            }
+        ],
+        "steps": [
+            "Bring a pot of water to a boil, then reduce the heat to low to ensure the water is no longer boiling. Use a skimmer to place the eggs in the water. Then increase the heat back to high and set a timer for 14 minutes.",
+            "While the eggs are boiling, prepare an ice water bath and set aside. After 14 minutes, remove the eggs from the water and place in the ice water bath to chill. Once the eggs have cooled completely, peel them and slice in half lengthwise.",
+            "Scoop the yolks into a small bowl and place the egg whites on a serving plate.",
+            "To make the filling, add the yolks, mayonnaise, dijon mustard, lemon juice, shallot, dill, salt and pepper to a bowl. Stir everything together until it's completely smooth.",
+            "Use a spoon to add a portion of the deviled egg mixture back into the hole of each egg white. Then place a small piece of smoked salmon to top on each egg, along with a sprinkle of capers and fresh dill."
+        ]
     }
 ]
