@@ -18,83 +18,24 @@
 <h1 class="page-title">Featured Recipes</h1>
 <hr></br>
 <div class="recipes">
+{% for recipe in featured_recipes %}
   <div class="recipe">
     <div class="card accordion">
-      <img src="static/Muffins.jpg" alt="Image of Egg Muffins" class="card-image-top">
-        <div class="card-body">
-          <h3 class="card-title"><a href="{{ url_for('recipe') }}">Healthy Breakfast Egg Muffins</a></h3>
-          <p class="card-text">Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!</p>
-        </div>
+      <img src="{{recipe['imageURL']}}" alt="{{recipe['imageURL']}}" class="card-image-top">
+      <div class="card-body">
+        <h3 class="card-title"><a href="{{ url_for('recipe') }}">{{recipe['name']}}</a></h3>
+        <p class="card-text">{{recipe['ctext']}}</p>
+      </div>
     </div>
     <div class="recipe-details panel">Ingredients
       <ul>
-        <li>egg</li>
-        <li>spinach</li>
-        <li>broccoli</li><br><br>
-        <li>kale</li>
-        <li>tomato</li>
-        <li>sausage</li><br><br>
-        <li>bacon</li>
+      {% for ingredient in recipe['ingredients'] %}
+        <li class="card-ingredients">{{ingredient['name']}}</li><br>
+      {% endfor %}
       </ul>
     </div>
   </div>
-  <div class="recipe">
-    <div class="card accordion">
-      <img src="static/poached.jpg" alt="Image of Poached Eggs" class="card-image-top">
-        <div class="card-body">
-          <h3 class="card-title"><a href="{{ url_for('recipe') }}">Perfect Poached Eggs</a></h3>
-          <p class="card-text">Poached eggs are a beautiful thing. The whites are just firm enough on the outside to contain an oozy, golden yolk in a round little egg package. And with a few tips, you too can learn how to poach an egg perfectly every time!</p>
-        </div>
-    </div>
-    <div class="recipe-details panel">Ingredients
-      <ul>
-        <li>egg</li>
-        <li>vinegar</li>
-      </ul>
-    </div>
-  </div>
-  <div class="recipe">
-    <div class="card accordion">
-      <img src="static/Salad.jpg" alt="Image of Egg Salad" class="card-image-top">
-        <div class="card-body">
-          <h3 class="card-title"><a href="{{ url_for('recipe') }}">Creamy Avocado Egg Salad</a></h3>
-          <p class="card-text">Avocado egg salad takes your classic egg salad recipe and adds healthy avocado for a creamy, nutritious and tasty new recipe you’re sure to love. It’s paleo, whole30, low carb, keto and all around delicious.</p>
-        </div>
-      </div>
-      <div class="recipe-details panel">Ingredients
-        <ul>
-          <li>egg</li>
-          <li>avocado</li>
-          <li>onion</li><br><br>
-          <li>mayonnaise</li>
-          <li>chives</li><br><br>
-          <li>parsley</li>
-          <li>lemon</li>
-          <li>lettuce</li>
-        </ul>
-      </div>
-  </div>
-  <div class="recipe">
-    <div class="card accordion">
-        <img src="static/Smoked.jpg" alt="Image of Smoked Salmon Deviled Eggs" class="card-image-top">
-          <div class="card-body">
-            <h3 class="card-title"><a href="{{ url_for('recipe') }}">Smoked Salmon Deviled Eggs</a></h3>
-            <p class="card-text">Smoked salmon deviled eggs take a classic appetizer (deviled eggs) to a stunning new level. Filled with fresh herbs, salty smoked salmon and briny capers, each bite is loaded with palate-pleasing flavor.</p>
-          </div>
-        </div>
-        <div class="recipe-details panel">Ingredients
-          <ul>
-            <li>egg</li>
-            <li>mayonnaise</li><br><br>
-            <li>shallot</li>
-            <li>mustard</li><br><br>
-            <li>lemon</li>
-            <li>dill</li><br><br>
-            <li>smoked salmon</li>
-            <li>capers</li>
-          </ul>
-        </div>
-  </div>
-  </div>
+{% endfor %}
+</div>
 
 {% endblock %}

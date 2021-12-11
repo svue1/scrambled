@@ -3,9 +3,8 @@
 [
     {
         "name": "Crock Pot Roast",
-        "card-text": [
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!"
-        ],
+        "ctext": 
+            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
         "ingredients": [
             {
                 "quantity": "1",
@@ -50,9 +49,8 @@
     },
     {
         "name": "Roasted Asparagus",
-        "card-text": [
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!"
-        ],
+        "ctext": 
+            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
         "ingredients": [
             {
                 "quantity": "1 lb",
@@ -99,9 +97,8 @@
     },
     {
         "name": "Curried Lentils and Rice",
-        "card-text": [
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!"
-        ],
+        "ctext": 
+            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
         "ingredients": [
             {
                 "quantity": "1 quart",
@@ -147,9 +144,8 @@
     },
     {
         "name": "Big Night Pizza",
-        "card-text": [
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!"
-        ],
+        "ctext": 
+            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
         "ingredients": [
             {
                 "quantity": "5 teaspoons",
@@ -214,9 +210,8 @@
     },
     {
         "name": "Cranberry and Apple Stuffed Acorn Squash Recipe",
-        "card-text": [
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!"
-        ],
+        "ctext": 
+            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
         "ingredients": [
             {
                 "quantity": "2",
@@ -274,9 +269,8 @@
     },
     {
         "name": "Mic's Yorkshire Puds",
-        "card-text": [
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!"
-        ],
+        "ctext": 
+            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
         "ingredients": [
             {
                 "quantity": "200g",
@@ -326,9 +320,8 @@
     },
     {
         "name": "Old-Fashioned Oatmeal Cookies",
-        "card-text": [
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!"
-        ],
+        "ctext": 
+            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
         "ingredients": [
             {
                 "quantity": "1 cup",
@@ -420,9 +413,8 @@
     },
     {
         "name": "Blueberry Oatmeal Squares",
-        "card-text": [
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!"
-        ],
+        "ctext": 
+            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
         "ingredients": [
             {
                 "quantity": "2-1/2 cups",
@@ -500,9 +492,8 @@
     },
     {
         "name": "Curried chicken salad",
-        "card-text": [
-            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!"
-        ],
+        "ctext": 
+            "Egg muffins are a healthy, easy, on-the-go breakfast. They’re filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
         "ingredients": [
             {
                 "quantity": "3",

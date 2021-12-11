@@ -15,7 +15,9 @@ import json
 
 # load recipe data
 fake_recipes_json=open('static/fake_recipes.json')
+featured_json=open('static/featured.json')
 recipe_data = json.load(fake_recipes_json)
+featured_data = json.load(featured_json)
 
 #creating app instance of flask
 app = Flask(__name__)
@@ -49,7 +51,10 @@ def load_user(user_id):
 @app.route("/")
 def home():
     title = "Scrambled"
-    return render_template("home.html", title=title, logged_in=current_user.is_authenticated) # can set any different variables
+    return render_template("home.html", 
+                            title=title, 
+                            featured_recipes=featured_data,
+                            logged_in=current_user.is_authenticated)
 
 @app.route("/recipes")
 def recipes():
