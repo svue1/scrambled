@@ -5,7 +5,7 @@
         "ctext": "Egg muffins are a healthy, easy, on-the-go breakfast. They are filling, low-carb, and perfect for meal prepping. Just switch up a few simple veggie and protein ingredients to create delicious combos that will last you through the week!",
         "time": "40 minutes",
         "serving": "12 servings",
-        "imageURL": "static/Muffins.jpg",
+        "imageURL": "https://i.ibb.co/6wDKLzf/Muffins.jpg",
         "ingredients": [
             {
                 "quantity": "12",
@@ -44,11 +44,12 @@
     {
         "name": "Perfect Poached Eggs",
         "id": "5",
-        "ctext":"Poached eggs are a beautiful thing. The whites are just firm enough on the outside to contain an oozy, golden yolk in a round little egg package. And with a few tips, you too can learn how to poach an egg perfectly every time!",
-        "time": "8 minutes",
-        "serving": "1 serving",
-        "imageURL": "static/poached.jpg",
-        "ingredients": [
+        "ctext":
+            "Poached eggs are a beautiful thing. The whites are just firm enough on the outside to contain an oozy, golden yolk in a round little egg package. And with a few tips, you too can learn how to poach an egg perfectly every time!",
+            "time": "8 minutes",
+            "serving": "1 serving",
+            "imageURL": "https://i.ibb.co/CHTy3zz/poached.jpg",
+            "ingredients": [
             {
                 "quantity": "1",
                 "name": "egg",
@@ -74,7 +75,7 @@
         "ctext":"Avocado egg salad takes your classic egg salad recipe and adds healthy avocado for a creamy, nutritious and tasty new recipe you’re sure to love. It’s paleo, whole30, low carb, keto and all around delicious.",
         "time": "25 minutes",
         "serving": "2 servings",
-        "imageURL": "static/Salad.jpg",
+        "imageURL": "https://i.ibb.co/wSVh5Wx/Salad.jpg",
         "ingredients": [
             {
                 "quantity": "3",
@@ -128,7 +129,7 @@
         "ctext":"Smoked salmon deviled eggs take a classic appetizer (deviled eggs) to a stunning new level. Filled with fresh herbs, salty smoked salmon and briny capers, each bite is loaded with palate-pleasing flavor.",
         "time": "34 minutes",
         "serving": "12 servings",
-        "imageURL": "static/Smoked.jpg",
+        "imageURL": "https://i.ibb.co/CKFQ1t5/Smoked.jpg",
         "ingredients": [
             {
                 "quantity": "6",
@@ -182,10 +183,10 @@
     {
         "name": "The Best Scrambled Eggs",
         "id": "8",
-        "ctext":"We have been eating scrambled eggs for days now. Why? Well, they are delicious. Obviously. But also EASY. You probably do not think you need a recipe for them, but maybe you do! And it sure helps to know how to make them the right way. Trust me. Stop making dry, crumbly, flavorless eggs! Follow these simple steps and recipe on how to make the absolute best scrambled eggs, which result in pillow-y, fluffy, creamy, flavorful eggs every time!",
+        "ctext":"We have been eating scrambled eggs for days now. Why? Well, they are delicious. Obviously. But also EASY. You probably don not think you need a recipe for them, but maybe you do! And it sure helps to know how to make them the right way. Trust me. Stop making dry, crumbly, flavorless eggs! Follow these simple steps and recipe on how to make the absolute best scrambled eggs, which result in pillow-y, fluffy, creamy, flavorful eggs every time!",
         "time": "6 minutes",
         "serving": "2 servings",
-        "imageURL": "static/recipe_of_the_day.jpg",
+        "imageURL": "https://i.ibb.co/2c5Vxx3/recipe-of-the-day.jpg",
         "ingredients": [
             {
                 "quantity": "4",
