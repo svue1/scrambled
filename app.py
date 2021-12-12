@@ -63,10 +63,80 @@ def recipes():
                             all_recipes=recipe_data,
                             logged_in=current_user.is_authenticated)
 
+@app.route('/recipes/1')
+def recipe1():
+    for recipe in recipe_data:
+        if recipe['id'] == "1":
+            one_recipe=recipe
+    return render_template("recipe.html", 
+                            title="Recipe",
+                            recipe=one_recipe,
+                            logged_in=current_user.is_authenticated)
+
+@app.route('/recipes/2')
+def recipe2():
+    for recipe in recipe_data:
+        if recipe['id'] == "2":
+            one_recipe=recipe
+    return render_template("recipe.html", 
+                            title="Recipe",
+                            recipe=one_recipe,
+                            logged_in=current_user.is_authenticated)
+
+@app.route('/recipes/3')
+def recipe3():
+    for recipe in recipe_data:
+        if recipe['id'] == "3":
+            one_recipe=recipe
+    return render_template("recipe.html", 
+                            title="Recipe",
+                            recipe=one_recipe,
+                            logged_in=current_user.is_authenticated)
+
 @app.route('/recipes/4')
-def recipe():
+def recipe4():
     for recipe in recipe_data:
         if recipe['id'] == "4":
+            one_recipe=recipe
+    return render_template("recipe.html", 
+                            title="Recipe",
+                            recipe=one_recipe,
+                            logged_in=current_user.is_authenticated)
+
+@app.route('/recipes/5')
+def recipe5():
+    for recipe in recipe_data:
+        if recipe['id'] == "5":
+            one_recipe=recipe
+    return render_template("recipe.html", 
+                            title="Recipe",
+                            recipe=one_recipe,
+                            logged_in=current_user.is_authenticated)
+
+@app.route('/recipes/6')
+def recipe6():
+    for recipe in recipe_data:
+        if recipe['id'] == "6":
+            one_recipe=recipe
+    return render_template("recipe.html", 
+                            title="Recipe",
+                            recipe=one_recipe,
+                            logged_in=current_user.is_authenticated)
+
+@app.route('/recipes/7')
+def recipe7():
+    for recipe in recipe_data:
+        if recipe['id'] == "7":
+            one_recipe=recipe
+    return render_template("recipe.html", 
+                            title="Recipe",
+                            recipe=one_recipe,
+                            logged_in=current_user.is_authenticated)
+
+@app.route('/recipes/8')
+def recipe8():
+    for recipe in recipe_data:
+        if recipe['id'] == "8":
             one_recipe=recipe
     return render_template("recipe.html", 
                             title="Recipe",
