@@ -11,12 +11,20 @@ with Joslenne Pena
 {% block content %}
 
 <div class="container recipe-container">
-    <h1>{{recipe['name']}}</h1>
+    <h1 id="recipe-title">{{recipe['name']}}
+        {% if logged_in %}
+            {% if recipe_is_saved==True %}
+                <span id="saved-button" name="{{recipe['id']}}"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+            {% else %}
+                <span id="saved-button" name="{{recipe['id']}}"><i class="fa fa-bookmark-o" aria-hidden="true"></i></span>
+            {% endif %}
+        {% endif %}
+    </h1>
     <hr>
     <div class="recipe-container-details">
-        <p>{{recipe['serving']}} : {{recipe['time']}}</p>
-        <p>{{recipe['ctext']}}</p>
         <div id="ingredients">
+            <p>{{recipe['serving']}} : {{recipe['time']}}</p>
+            <p>{{recipe['ctext']}}</p>
             <h3>Ingredients</h3>
             <ul>
             {% for ingredient in recipe['ingredients'] %}

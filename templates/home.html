@@ -28,7 +28,7 @@ with Joslenne Pena
 
 <!--Feature Section-->
 <h1 class="page-title">Featured Recipes</h1>
-<hr></br>
+<hr>
 <div class="recipes">
 {% for recipe in featured_recipes %}
   {% if recipe['id']=='8' %}
@@ -42,12 +42,11 @@ with Joslenne Pena
           <p class="card-text">{{recipe['ctext']}}</p>
         </div>
       </div>
-      <div class="recipe-details panel">Ingredients
-        <ul>
+      <div class="recipe-details panel">
+        <h3>Ingredients</h3>
         {% for ingredient in recipe['ingredients'] %}
-          <li class="card-ingredients">{{ingredient['name']}}</li><br>
+      <span class="card-ingredients">{{ingredient['name']}}</span>
         {% endfor %}
-        </ul>
       </div>
     </div>
   {% endif %}

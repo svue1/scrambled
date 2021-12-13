@@ -16,7 +16,7 @@ with Joslenne Pena
     line-height: 1.5;
     margin: 0;
 }
-p {
+p, li {
     font-family: Georgia, serif;
     margin: 0;
     font-size: 16px;
@@ -35,12 +35,12 @@ h2 {
     font-weight: 700;
     margin: 0;
 }
-h3, .profile-accordion {
+h3 {
     font-family: "Rubik", sans-serif;
     font-size: 20px;
     font-weight: 500;
 }
-h4 {
+h4, .nav-bar {
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -143,6 +143,7 @@ footer {
     padding: 10px 15px;
     font-size: 14px;
     border: none;
+    margin: 0 0 0 10px;
 }
 .search-container button {
     height: 2.5em;
@@ -189,6 +190,10 @@ footer {
 img {
     width: 100%;
 }
+.recipe .card .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
 .recipe-of-the-day--image {
     width: 100%;
     max-height: 800px;
@@ -232,7 +237,8 @@ hr {
     border-width:0;
     border-radius: 0 5px 5px 0;
     color: var(--yellow);
-    background-color: var(--yellow)
+    background-color: var(--yellow);
+    margin: 0 0 15px 0;
 }
 .container {
     max-width: 1000px;
@@ -252,7 +258,16 @@ hr {
     background-color: white;
 }
 .card-body {
-    padding: 5%;
+    padding: 5px 15px 12px 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* white-space: nowrap; */
+}
+.card-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 30px;
+    white-space: nowrap;
 }
 .card-title a{
     color: black;
@@ -261,53 +276,40 @@ hr {
 .card-title a:hover{
     color: var(--orange);
 }
-.recipe {
-    margin: 3%;
-}
 .recipes {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: left;
-    margin: 3%;
     flex-wrap: wrap;
-}
-.recipe-details {
-    margin: 1%;
-    width: 100%;
-    padding: 5%;
-    background-color: white;
-    font-weight: bold;
+    gap: 25px;
+    margin: 10px 25px 50px 25px;
 }
 .recipe-card {
     display: flex;
     flex-direction: row;
 }
-.allrecipe-details {
+.recipe-details {
     margin: 1%;
+    width: 250px;
     padding: 10px;
     background-color: white;
     font-weight: bold;
-/* <<<<<<< HEAD */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 1;
-    gap: 30px;
-/* =======
->>>>>>> 11007ab7640e0dd00832e9cb2316ab5946f179aa */
 }
 .card-ingredients {
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     background-color: var(--yellow);
     border-radius: 10px;
-    font-weight: bold;
-    padding: 5px 8px;
-    /* margin: 10px 3px; */
-    white-space:nowrap;
+    /* font-weight: bold; */
+    padding: 2px 8px;
+    white-space: nowrap;
 }
 /* Recipe Card CSS end */
 
@@ -316,11 +318,11 @@ hr {
     background: white;
 }
 .recipe-container-details {
-    padding: 48px;
+    padding: 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-between;
 }
 .recipe-container h1 {
@@ -333,11 +335,19 @@ hr {
 .recipe-container .full-width {
     width: 100%;
 }
+#recipe-title {
+    margin: 5% 0 0 0;
+}
 #recipe-img {
     max-width: 500px;
+    height: 400px;
     border-style: solid;
     border-width: 1px;
     flex: 1; 
+}
+.card-image-top {
+    height: 200px;
+    object-fit: cover;
 }
 #ingredients {
     flex: 1; 
@@ -347,6 +357,14 @@ hr {
 #ingredients p,
 #instructions p {
     padding: 5px 20px;
+}
+#saved-button {
+    color: var(--orange);
+    float: right;
+    margin: 0 10% 0 0;
+    background: none;
+    border: none;
+    padding: none;
 }
 /* End Recipe Page */
 

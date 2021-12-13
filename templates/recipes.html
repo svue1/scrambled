@@ -13,24 +13,6 @@ with Joslenne Pena
 <div class="container">
   <h1 class="page-title">All Recipes</h1>
   <hr>
-<!-- <<<<<<< HEAD -->
-  <br>
-  {% for recipe in all_recipes %}
-  <div class="recipe-card">
-    <div class="card accordion">
-      <img src="static/stock.jpg" alt="stock image" class="card-image-top">
-      <div class="card-body">
-        <h3 class="card-title"><a href="{{ url_for('recipe') }}">{{recipe['name']}}</a></h3>
-      </div>
-    </div>
-    <div class="allrecipe-details panel">
-    <h3>Ingredients</h3><br>
-      {% for ingredient in recipe['ingredients'] %}
-        <span class="card-ingredients">
-          {{ingredient['name']}}
-        </span>
-      {% endfor %}
-<!-- =======
   <div class="recipes">
   {% for recipe in all_recipes %}
     <div class="recipe">
@@ -40,14 +22,12 @@ with Joslenne Pena
           <h3 class="card-title"><a href="http://localhost:5000/recipes/{{recipe['id']}}">{{recipe['name']}}</a></h3>
         </div>
       </div>
-      <div class="allrecipe-details panel">Ingredients
-        <ul>
+      <div class="recipe-details panel">
+        <h3>Ingredients</h3>
           {% for ingredient in recipe['ingredients'] %}
-            <li class="card-ingredients">{{ingredient['name']}}</li><br>
+            <span class="card-ingredients">{{ingredient['name']}}</span>
           {% endfor %}
-        </ul>
       </div>
->>>>>>> 11007ab7640e0dd00832e9cb2316ab5946f179aa -->
     </div>
   {% endfor %}
   </div>
