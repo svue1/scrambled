@@ -1,3 +1,11 @@
+/**
+ * @author: Aberdeen Morrow
+ * Last Modified: 12-11-21
+ * Macalester College
+ * COMP 446 Internet Computing
+ * with Joslenne Pena
+ */
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 

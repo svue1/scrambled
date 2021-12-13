@@ -1,5 +1,5 @@
-# @author: Aberdeen Morrow
-# Last Modified: 12-02-21
+# @author: Aberdeen Morrow, Shouayee Vue
+# Last Modified: 12-12-21
 # Macalester College
 # COMP 446 Internet Computing
 # with Joslenne Pena
@@ -15,7 +15,9 @@ import json
 
 # load recipe data
 fake_recipes_json=open('static/fake_recipes.json')
+featured_json=open('static/featured.json')
 recipe_data = json.load(fake_recipes_json)
+featured_data = json.load(featured_json)
 
 #creating app instance of flask
 app = Flask(__name__)
@@ -49,7 +51,10 @@ def load_user(user_id):
 @app.route("/")
 def home():
     title = "Scrambled"
-    return render_template("home.html", title=title, logged_in=current_user.is_authenticated) # can set any different variables
+    return render_template("home.html", 
+                            title=title, 
+                            featured_recipes=featured_data,
+                            logged_in=current_user.is_authenticated)
 
 @app.route("/recipes")
 def recipes():
@@ -58,15 +63,15 @@ def recipes():
                             all_recipes=recipe_data,
                             logged_in=current_user.is_authenticated)
 
-@app.route('/recipe')
-def recipe():
+@app.route('/recipes/<id>')
+def recipe1(id):
+    for recipe in recipe_data:
+        if recipe['id'] == id:
+            one_recipe=recipe
     return render_template("recipe.html", 
                             title="Recipe",
+                            recipe=one_recipe,
                             logged_in=current_user.is_authenticated)
-# @app.route("/recipe/<id>")
-# def recipe(id):
-#     return render_template("recipe.html", title=recipe['name'], recipe=recipe)
-    # return render_template("recipe.html", title=db.query.get(id).title, recipe=db.query.get(id))
 
 @app.route('/login', methods=['GET','POST'])
 def login():
