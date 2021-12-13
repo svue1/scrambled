@@ -34,7 +34,7 @@ h3, .profile-accordion {
     font-size: 20px;
     font-weight: 500;
 }
-a {
+h4 {
     font-family: "Work Sans", sans-serif;
     /* letter-spacing: 0.05em; */
     font-weight: 500;
@@ -245,8 +245,7 @@ hr {
     border-width: 1px;
     border-color: #DDDDDD;
     margin: 1%;
-    /* width: 18rem; */
-    width: 250px;
+    width: 250px !important;
     background-color: white;
 }
 .card-body {
@@ -277,26 +276,32 @@ hr {
     background-color: white;
     font-weight: bold;
 }
-.recipe-details ul li{
-    display: inline;
-    background-color: var(--yellow);
-    border-radius: 10px;
-    font-weight: bold;
-    padding: 2%;
+.recipe-card {
+    display: flex;
+    flex-direction: row;
 }
 .allrecipe-details {
     margin: 1%;
-    padding: 5%;
+    padding: 10px;
     background-color: white;
     font-weight: bold;
-    /* float:right; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 30px;
 }
 .card-ingredients {
-    display: inline;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
     background-color: var(--yellow);
     border-radius: 10px;
     font-weight: bold;
-    padding: 2%;
+    padding: 5px 8px;
+    /* margin: 10px 3px; */
+    white-space:nowrap;
 }
 /* Recipe Card CSS end */
 
