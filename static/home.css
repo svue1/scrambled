@@ -1,6 +1,6 @@
 /*
 @author: Aberdeen Morrow, Shouayee Vue
-Last Modified: 12-11-21
+Last Modified: 12-14-21
 Macalester College
 COMP 446 Internet Computing
 with Joslenne Pena
@@ -261,7 +261,6 @@ hr {
     padding: 5px 15px 12px 15px;
     text-overflow: ellipsis;
     overflow: hidden;
-    /* white-space: nowrap; */
 }
 .card-title {
     text-overflow: ellipsis;
@@ -307,7 +306,6 @@ hr {
     text-decoration: none;
     background-color: var(--yellow);
     border-radius: 10px;
-    /* font-weight: bold; */
     padding: 2px 8px;
     white-space: nowrap;
 }
@@ -329,9 +327,6 @@ hr {
     background: white;
     padding: 0 0 0 48px;
 }
-.recipe-container h1, 
-.recipe-container hr, 
-.recipe-container br,
 .recipe-container .full-width {
     width: 100%;
 }
@@ -354,7 +349,7 @@ hr {
     min-width: 250px;
     overflow: wrap;
 }
-#ingredients p,
+
 #instructions p {
     padding: 5px 20px;
 }
@@ -405,16 +400,16 @@ hr {
     transition: 0.4s;
 }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
     background-color: #ccc;
 }
   
-  /* Style the accordion panel. Note: hidden by default */
+/* Style the accordion panel. Note: hidden by default */
 .panel {
     display: none;
 }
-  /* End Accordion CSS */
+/* End Accordion CSS */
 
 /* Profile CSS */
 .profile-accordion {
@@ -424,7 +419,6 @@ hr {
     margin: 1% 0 0 0;
     width: 100%;
 }
-
 /* End Profile CSS */
 
 /* Error CSS */

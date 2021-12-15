@@ -1,12 +1,13 @@
 <!-- 
-@author: Aberdeen Morrow
-Last Modified: 12-02-21
+@author: Aberdeen Morrow, Shouayee Vue
+Last Modified: 12-14-21
 Macalester College
 COMP 446 Internet Computing
 with Joslenne Pena -->
 {% extends 'base.html' %}
 
 {% block content %}
+
 <div class="container login-container">
     <h1>Log In</h1>
     {% with messages = get_flashed_messages() %}
@@ -28,10 +29,6 @@ with Joslenne Pena -->
         <input class="signup" name="action" type="submit" value="Sign Up"></input>
         <input class="login" name="action" type="submit" value="Log In"></input>
     </form>
-
-    <!-- <label>
-    <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label> -->
 </div>
 
 {% endblock %}

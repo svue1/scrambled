@@ -1,6 +1,6 @@
 <!--
-@author: Aberdeen Morrow
-Last Modified: 12-02-21
+@author: Aberdeen Morrow, Shouayee Vue
+Last Modified: 12-14-21
 Macalester College
 COMP 446 Internet Computing
 with Joslenne Pena
@@ -9,6 +9,7 @@ with Joslenne Pena
 {% extends 'base.html' %}
 
 {% block content %}
+
     <div class="container">
         <h1>Welcome, {{current_user.username}}!</h1>
         <h2>Your Saved Recipes</h2>
@@ -16,20 +17,21 @@ with Joslenne Pena
         {% for recipe in saved_recipes %}
             <div class="recipe">
                 <div class="card accordion">
-                <img src="{{recipe['imageURL']}}" alt="{{recipe['imageURL']}}" class="card-image-top">
-                <div class="card-body">
-                    <h3 class="card-title"><a href="http://localhost:5000/recipes/{{recipe['id']}}">{{recipe['name']}}</a></h3>
-                </div>
+                    <img src="{{recipe['imageURL']}}" alt="{{recipe['imageURL']}}" class="card-image-top">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="http://localhost:5000/recipes/{{recipe['id']}}">{{recipe['name']}}</a></h3>
+                    </div>
                 </div>
                 <div class="recipe-details panel">
                 <h3>Ingredients</h3>
                     {% for ingredient in recipe['ingredients'] %}
-                    <span class="card-ingredients">{{ingredient['name']}}</span>
+                        <span class="card-ingredients">{{ingredient['name']}}</span>
                     {% endfor %}
                 </div>
             </div>
         {% endfor %}
-    </div>
+        </div>
         <a href="{{ url_for('logout') }}">LOG OUT</a>
     </div>  
+    
 {% endblock %}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 @author: Shouayee Vue, Aberdeen Morrow
-Last Modified: 12-11-21
+Last Modified: 12-14-21
 Macalester College
 COMP 446 Internet Computing
 with Joslenne Pena
@@ -10,6 +10,7 @@ with Joslenne Pena
     <head>
         <title>Scrambled</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+        <!-- Favicon -->
         <script src="https://kit.fontawesome.com/54e37e037b.js" crossorigin="anonymous"></script>
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -29,7 +30,7 @@ with Joslenne Pena
             <div class="search-container">
                 <form action="{{ url_for('search') }}" method="post">
                     <input type="text" placeholder="Search recipes by ingredient..." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
             </div>
             <div class="spacer"></div>
